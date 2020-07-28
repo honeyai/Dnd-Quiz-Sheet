@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="326" viewBox="0 0 600 326">
+  <text font-size="0" style="white-space:pre">
+    <tspan x="92.663" y="113" fill="rgb(130,130,130)" font-family="AppleGothic" font-size="25" font-weight="300" style="white-space:pre;text-transform:none">Human</tspan> <tspan x="113.013" y="143" fill="rgb(130,130,130)" font-family="AppleGothic" font-size="25" font-weight="300" style="white-space:pre;text-transform:none">Orc</tspan> <tspan x="120.025" y="173" fill="rgb(130,130,130)" font-family="AppleGothic" font-size="25" font-weight="300" style="white-space:pre;text-transform:none">Elf</tspan> <tspan x="98.888" y="203" fill="rgb(130,130,130)" font-family="AppleGothic" font-size="25" font-weight="300" style="white-space:pre;text-transform:none">Dwarf</tspan> <tspan x="94.15" y="233" fill="rgb(130,130,130)" font-family="AppleGothic" font-size="25" font-weight="300" style="white-space:pre;text-transform:none">Tiefling</tspan> <tspan x="92" y="263" fill="rgb(130,130,130)" font-family="AppleGothic" font-size="25" font-weight="300" style="white-space:pre;text-transform:none">Gnome</tspan> <tspan x="93.325" y="293" fill="rgb(130,130,130)" font-family="AppleGothic" font-size="25" font-weight="300" style="white-space:pre;text-transform:none">Halfling</tspan>
+  </text>
+  <text font-size="0" style="white-space:pre">
+    <tspan x="15" y="34" fill="rgb(130,130,130)" font-family="AppleGothic" font-size="25" font-weight="300" style="white-space:pre;text-transform:none">Each question will have 3 responses, each </tspan> <tspan x="15" y="64" fill="rgb(130,130,130)" font-family="AppleGothic" font-size="25" font-weight="300" style="white-space:pre;text-transform:none">giving a weight to the associated races.</tspan>
+  </text>
+  <path fill="none" stroke="rgb(128,128,128)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1" d="M194 108l30.52727273 3.34545455L340 124l-146-16z"/>
+  <path fill="none" stroke="rgb(128,128,128)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1" d="M194 108l30.52727273 15.47272727L340 182l-146-74z"/>
+  <text font-size="0" style="white-space:pre">
+    <tspan x="361" y="129" fill="rgb(130,130,130)" font-family="AppleGothic" font-size="25" font-weight="300" style="white-space:pre;text-transform:none">Response 1</tspan>
+  </text>
+  <text font-size="0" style="white-space:pre">
+    <tspan x="361" y="203" fill="rgb(130,130,130)" font-family="AppleGothic" font-size="25" font-weight="300" style="white-space:pre;text-transform:none">Response 2</tspan>
+  </text>
+  <text font-size="0" style="white-space:pre">
+    <tspan x="361" y="270" fill="rgb(130,130,130)" font-family="AppleGothic" font-size="25" font-weight="300" style="white-space:pre;text-transform:none">Response 3</tspan>
+  </text>
+  <path fill="none" stroke="rgb(128,128,128)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1" d="M194 108l34.08181818 30.94545455L357 256 194 108z"/>
+  <path fill="none" stroke="rgb(189,24,24)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1" d="M194 128l30.52727273-2.5090909L340 116l-146 12z"/>
+  <path fill="none" stroke="rgb(189,24,24)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1" d="M194 128l30.52727273 14.21818182L340 196l-146-68z"/>
+  <path fill="none" stroke="rgb(189,24,24)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1" d="M194 128l30.52727273-2.5090909L340 116l-146 12z"/>
+  <path fill="none" stroke="rgb(189,24,24)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1" d="M194 128l30.52727273-2.5090909L340 116l-146 12z"/>
+  <path fill="none" stroke="rgb(243,202,62)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1" d="M194 284l30.52727273-2.5090909L340 272l-146 12z"/>
+  <path fill="none" stroke="rgb(255,51,102)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1" d="M194 256l30.52727273-9.4090909L340 211l-146 45z"/>
+  <path fill="none" stroke="rgb(42,201,64)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1" d="M194 226l30.52727273-18.6090909L340 137l-146 89z"/>
+  <path fill="none" stroke="rgb(51,225,255)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1" d="M194 196l34.08181818 12.54545455L357 256l-163-60z"/>
+  <path fill="none" stroke="rgb(250,153,23)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1" d="M194 162l34.08181818 7.1090909L357 196l-163-34z"/>
+</svg>
