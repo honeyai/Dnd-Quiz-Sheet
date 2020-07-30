@@ -326,25 +326,25 @@ const QuestionAndAnswers = [
     ]
   },
   {
-    ability: "",
+    ability: "constitution",
     QuestionSet: [
       {
-        question: "",
+        question: "How tough are you?",
         answers: [
           {
-            answer: "",
+            answer: "I can take punches that would drop normal people.",
             value: num,
           },
           {
-            answer: "",
+            answer: "I've taken massive blows and kept on fighting.",
             value: num,
           },
           {
-            answer: "",
+            answer: "I'm not fragile.",
             value: num,
           },
           {
-            answer: "",
+            answer: "When people jokingly hit me, they hurt me.",
             value: num,
           },
         ]
