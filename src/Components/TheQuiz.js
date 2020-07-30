@@ -333,82 +333,82 @@ const QuestionAndAnswers = [
         answers: [
           {
             answer: "I can take punches that would drop normal people.",
-            value: num,
+            value: 1,
           },
           {
             answer: "I've taken massive blows and kept on fighting.",
-            value: num,
+            value: 2,
           },
           {
             answer: "I'm not fragile.",
-            value: num,
+            value: 0,
           },
           {
             answer: "When people jokingly hit me, they hurt me.",
-            value: num,
+            value: -1,
           },
         ]
       },
       {
-        question: "",
+        question: "The following statement most accurately describes my tolerance for alcohol:",
         answers: [
           {
-            answer: "",
-            value: num,
+            answer: "I can drink all night and I never get drunk.",
+            value: 1,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I have a hard time getting drunk when I drink. I never have a hangover.",
+            value: 2,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I have a normal tolerance for alcohol. Sometimes I have hangovers from drinking.",
+            value: 0,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I become drunk even when I consume small amounts of alcohol. My hangovers are horrible.",
+            value: -1,
           },
         ]
       },
       {
-        question: "",
+        question: "The following statement most accurately describes my health.",
         answers: [
           {
-            answer: "",
-            value: num,
+            answer: "I am sick most of the time.",
+            value: -1,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I seem to get sick as often as most people I know.",
+            value: 0,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I have never missed a day of work due to illness.",
+            value: 1,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I can't remember ever being sick.",
+            value: 2,
           },
         ]
       },
       {
-        question: "",
+        question: "When it comes to stamina...",
         answers: [
           {
-            answer: "",
-            value: num,
+            answer: "I am able to exercise with no ill effects.",
+            value: 0,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I have a hard time running.",
+            value: -1,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I regularly exert myself physically, and enjoy doing so.",
+            value: 2,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I physically exert myself all day long on a regular basis.",
+            value: 1,
           },
         ]
       },
