@@ -8,23 +8,28 @@ const QuestionAndAnswers = [
     Response: [
       {
         ability: "strength",
-        answer: "What else is a battle-axe good for?"
+        answer: "What else is a battle-axe good for?",
+        value: 1,
       },
       {
         ability: "dexterity",
-        answer: "They’ll cease to be a problem long before they even see you"
+        answer: "They’ll cease to be a problem long before they even see you",
+        value: 1,
       },
       {
         ability: "constitution",
-        answer: "Fist-a-cuffs you’ll batter the debt until it’s settled"
+        answer: "Fist-a-cuffs you’ll batter the debt until it’s settled",
+        value: 1,
       },
       {
         ability: "intelligence",
-        answer: "A plan as already been set in motion, by the end of the day they’ll pay back the debt."
+        answer: "A plan as already been set in motion, by the end of the day they’ll pay back the debt.",
+        value: 1,
       },
       {
         ability: "charisma",
-        answer: "You’re a silver tongue, you’ll get what’s owed twice over."
+        answer: "You’re a silver tongue, you’ll get what’s owed twice over.",
+        value: 1,
       },
     ],
   },
@@ -34,22 +39,27 @@ const QuestionAndAnswers = [
       {
         ability: "strength",
         answer: "A Warhammer",
+        value: 1,
       },
       {
         ability: "dexterity",
         answer: "Bow and arrows",
+        value: 1,
       },
       {
         ability: "constitution",
         answer: "I am a weapon",
+        value: 1,
       },
       {
         ability: "intelligence",
         answer: "A spell book",
+        value: 1,
       },
       {
         ability: "charisma",
         answer: "My words are daggers",
+        value: 1,
       },
     ],
   },
@@ -59,22 +69,27 @@ const QuestionAndAnswers = [
       {
         ability: "strength",
         answer: "Athletic",
+        value: 1,
       },
       {
         ability: "dexterity",
         answer: "Nimble",
+        value: 1,
       },
       {
         ability: "constitution",
         answer: "Tenacious",
+        value: 1,
       },
       {
         ability: "intelligence",
         answer: "Curious",
+        value: 1,
       },
       {
         ability: "charisma",
         answer: "Smooth",
+        value: 1,
       },
     ],
   },
@@ -83,19 +98,23 @@ const QuestionAndAnswers = [
     Response: [
       {
         ability: ["strength", "dexterity"],
-        answer: "I rush in!"
+        answer: "I rush in!",
+        value: 1,
       },
       {
         ability: "dexterity",
-        answer: "I sneak up to my enemies"
+        answer: "I sneak up to my enemies",
+        value: 1,
       },
       {
         ability: "intelligence",
-        answer: "I access the situation before I attack"
+        answer: "I access the situation before I attack",
+        value: 1,
       },
       {
         ability: "charisma",
-        answer: "I support from afar, distracting them with quips!"
+        answer: "I support from afar, distracting them with quips!",
+        value: 1,
       },
     ]
   },
@@ -104,23 +123,233 @@ const QuestionAndAnswers = [
     Response: [
       {
         ability: "strength",
-        answer: "Always, there isn’t anything I don’t break"
+        answer: "Always, there isn’t anything I don’t break",
+        value: 1,
       },
       {
         ability: "dexterity",
-        answer: "Why break things when you can break in?"
+        answer: "Why break things when you can break in?",
+        value: 1,
       },
       {
         ability: "constitution",
-        answer: "I don’t break them, they break against me"
+        answer: "I don’t break them, they break against me",
+        value: 1,
       },
       {
         ability: "intelligence",
-        answer: "Only if I have a reason to break it, and it’ll will break most efficiently"
+        answer: "Only if I have a reason to break it, and it’ll will break most efficiently",
+        value: 1,
       },
       {
         ability: "charisma",
-        answer: "I don’t ever have to lift a finger, someone else will break it for me"
+        answer: "I don’t ever have to lift a finger, someone else will break it for me",
+        value: 1,
+      },
+    ]
+  },
+  {
+    ability: "strength",
+    QuestionSet: [
+      {
+        question: "My body...",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+    ]
+  },
+  {
+    ability: "",
+    QuestionSet: [
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+    ]
+  },
+  {
+    ability: "",
+    QuestionSet: [
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+    ]
+  },
+  {
+    ability: "",
+    QuestionSet: [
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+    ]
+  },
+  {
+    ability: "",
+    QuestionSet: [
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
+      },
+      {
+        question: "",
+        answers: [
+          {
+            answer: "",
+            value: num,
+          }
+        ]
       },
     ]
   },
