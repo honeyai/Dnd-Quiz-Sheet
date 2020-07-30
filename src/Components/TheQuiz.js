@@ -306,20 +306,20 @@ const QuestionAndAnswers = [
         question: "When it comes to sneaking about…",
         answers: [
           {
-            answer: "",
-            value: num,
+            answer: "I’m immediately spotted",
+            value: -1,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I can get on decently unnoticed",
+            value: 0,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I’m a shadow",
+            value: 1,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I’m seen only when I wish it",
+            value: 2,
           },
         ]
       },
