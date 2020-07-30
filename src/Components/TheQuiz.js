@@ -504,7 +504,7 @@ const QuestionAndAnswers = [
     ]
   },
   {
-    ability: "",
+    ability: "charisma",
     QuestionSet: [
       {
         question: "",
