@@ -2,10 +2,10 @@ import React from 'react';
 
 
 
-const Answers = (question) => {
+const Answers = ({answer}) => {
   return (
     <div>
-      
+      {answer}
     </div>
   );
 };
