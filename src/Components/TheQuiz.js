@@ -418,85 +418,85 @@ const QuestionAndAnswers = [
     ability: "intelligence",
     QuestionSet: [
       {
-        question: "",
+        question: "Rate your learning ability:",
         answers: [
           {
-            answer: "",
-            value: num,
+            answer: "I can learn new things very quickly.",
+            value: 1,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I learn as fast as everyone else it seems.",
+            value: 0,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I'm constantly learning new subjects at an astounding rate.",
+            value: 2,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I have a hard time learning new things.",
+            value: -1,
           },
         ]
       },
       {
-        question: "",
+        question: "When it comes to my problem-solving ability...",
         answers: [
           {
-            answer: "",
-            value: num,
+            answer: "I am sometimes able to figure out a solution for a problem.",
+            value: -1,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I think I'm pretty good at solving problems and organizing information.",
+            value: 0,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I can easily find solutions to complex problems.",
+            value: 1,
           },
           {
-            answer: "",
-            value: num,
+            answer: "My critical thinking skills are absolutely flawless",
+            value: 2,
           },
         ]
       },
       {
-        question: "",
+        question: "This statement accurately describes me:",
         answers: [
           {
-            answer: "",
-            value: num,
+            answer: "I had the highest GPA in my class.",
+            value: 2,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I was a good student. I consistently made the A/B Honor Roll.",
+            value: 1,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I was an average student. I had decent grades.",
+            value: 0,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I was a bad student. I had a hard time keeping up.",
+            value: -1,
           },
         ]
       },
       {
-        question: "",
+        question: "When it comes to memory…",
         answers: [
           {
-            answer: "",
+            answer: "I have a really hard time remembering things.",
             value: num,
           },
           {
-            answer: "",
+            answer: "I remember most things though subtle details sometimes elude me.",
             value: num,
           },
           {
-            answer: "",
+            answer: "I remember just about everything I'm exposed to.",
             value: num,
           },
           {
-            answer: "",
+            answer: "I have a photographic memory and I always remember every detail.",
             value: num,
           },
         ]
