@@ -507,86 +507,86 @@ const QuestionAndAnswers = [
     ability: "charisma",
     QuestionSet: [
       {
-        question: "",
+        question: "When it comes to leadership...",
         answers: [
           {
-            answer: "",
+            answer: "I've never been in a leadership position.",
+            value: -1,
+          },
+          {
+            answer: "I perform adequately when I'm the leader.",
+            value: 0,
+          },
+          {
+            answer: "People look to me for direction instinctively.",
+            value: 1,
+          },
+          {
+            answer: "People go out of their way to put me in leadership positions.",
+            value: 2,
+          },
+        ]
+      },
+      {
+        question: "The following statement most accurately describes me.",
+        answers: [
+          {
+            answer: "I have an extremely difficult time making new friends.",
             value: num,
           },
           {
-            answer: "",
+            answer: "I make friends fairly easily and engage in small talk with new ",
             value: num,
           },
           {
-            answer: "",
+            answer: "After meeting me, people go out of their way to keep in touch with me.",
             value: num,
           },
           {
-            answer: "",
+            answer: "I make new friends everywhere I go.",
             value: num,
           },
         ]
       },
       {
-        question: "",
+        question: "Rate your persuasiveness.",
         answers: [
           {
-            answer: "",
-            value: num,
+            answer: "I can make people do almost anything I want them to do.",
+            value: 2,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I have an easy time convincing others to see things my way.",
+            value: 1,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I convince others to do things my way some of the time.",
+            value: 0,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I have a hard time convincing others to do what I want them to do.",
+            value: -1,
           },
         ]
       },
       {
-        question: "",
+        question: "When you’re in a bar you are the person who…",
         answers: [
           {
-            answer: "",
-            value: num,
+            answer: "The bar cheers at my arrival",
+            value: 2,
           },
           {
-            answer: "",
-            value: num,
+            answer: "Talks themselves into free drinks",
+            value: 1,
           },
           {
-            answer: "",
-            value: num,
+            answer: "comes in just to have a drink with friends",
+            value: 0,
           },
           {
-            answer: "",
-            value: num,
-          },
-        ]
-      },
-      {
-        question: "",
-        answers: [
-          {
-            answer: "",
-            value: num,
-          },
-          {
-            answer: "",
-            value: num,
-          },
-          {
-            answer: "",
-            value: num,
-          },
-          {
-            answer: "",
-            value: num,
+            answer: "People steer clear when I approach them",
+            value: -1,
           },
         ]
       },
