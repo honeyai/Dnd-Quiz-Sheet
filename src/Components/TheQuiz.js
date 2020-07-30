@@ -1,6 +1,5 @@
 import React from 'react';
 import Question from './Question';
-import Answers from './Answers';
 
 const QuestionAndAnswers = [
   {
@@ -241,70 +240,70 @@ const QuestionAndAnswers = [
     ability: "dexterity",
     QuestionSet: [
       {
-        question: "",
+        question: "When it comes to sprinting...",
         answers: [
           {
-            answer: "",
-            value: num,
+            answer: "I am slower than most people I know.",
+            value: -1,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I am neither slow nor fast compared to the people I know.",
+            value: 0,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I am faster than most people I know.",
+            value: 1,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I am faster than everyone else.",
+            value: 2,
           },
         ]
       },
       {
-        question: "",
+        question: "When it comes to hand-eye coordination...",
         answers: [
           {
-            answer: "",
-            value: num,
+            answer: "I'm horrible at video games.",
+            value: -1,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I could be an Olympic marksman.",
+            value: 2,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I'm about average.",
+            value: 0,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I can juggle well.",
+            value: 1,
           },
         ]
       },
       {
-        question: "",
+        question: "When it comes to reflexes...",
         answers: [
           {
-            answer: "",
-            value: num,
+            answer: "My reflexes have saved my life on more than one occasion.",
+            value: 2,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I am extremely quick.",
+            value: 1,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I've never noticed whether I'm fast or slow.",
+            value: 0,
           },
           {
-            answer: "",
-            value: num,
+            answer: "I am extremely slow.",
+            value: -1,
           },
         ]
       },
       {
-        question: "",
+        question: "When it comes to sneaking about…",
         answers: [
           {
             answer: "",
