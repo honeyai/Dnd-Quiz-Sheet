@@ -126,6 +126,23 @@ const QuestionAndAnswers = [
   },
 ]
 
+const index = [];
+
+questionBank.forEach(question => {
+  index.push(questionBank.indexOf(question))
+})
+
+const shuffleArray = array => {
+  for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+shuffleArray(index)
+
+console.log("this be index", index)
+
 const TheQuiz = () => {
   return (
     <div>
