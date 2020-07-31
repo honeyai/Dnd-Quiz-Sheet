@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import GetRace from './Components/GetRace';
+// import GetRace from './Components/GetRace';
 import TheQuiz from './Components/TheQuiz';
 
 function App() {

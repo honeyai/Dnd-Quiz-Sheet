@@ -10,7 +10,7 @@ import { Button } from '@material-ui/core';
 //
 
 let num = 0;
-let num1 = 0;
+let zero = 0;
 let next = index.splice(num, 1); 
 let altNext = questionSetIndex.splice(num, 1); 
 //
@@ -30,39 +30,42 @@ const TheQuiz = () => {
   const [nexQue, setNexQue] = useState(null); 
 
   useEffect(()=> {
-    setNexQue(QuestionsAndAnswer[next[num1]].Question);
+    setNexQue(QuestionsAndAnswer[next[zero]].Question);
+    console.log("next!", index)
   }, []);
 
-  // console.log("next!", next)
   // console.log("num!", num)
+  // console.log("altNext!", questionSetIndex)
   
 
   /*----------  The following gives the index for the next question on click  ----------*/
-let totalQuestions = 0;
   const nextQuestion = () => {
     // num++; 
-    console.log("next!", next)
-    console.log("alt next!", altNext)
+    // console.log("next!", next)
+    // console.log("alt next!", altNext)
     // console.log("index length is", index.length)
-    console.log("altnext length is", questionSetIndex.length)
+    // console.log("altnext length is", questionSetIndex.length)
     next = index.splice(num, 1);
-    if (index.length !== 0) {
+    if(index.length !== 0 && questionSetIndex.length !== 0){
       if(next < 5){
-        setNexQue(QuestionsAndAnswer[next[num1]].Question);
-        console.log(totalQuestions++)
-        
-      } else if(next >= 5 && questionSetIndex.length !== 0){
-        altNext = questionSetIndex.splice(num,1);
-        setNexQue(QuestionsAndAnswer[next[num1]].QuestionSet[altNext[num1]].question);
-        console.log(totalQuestions++)
-
+          setNexQue(QuestionsAndAnswer[next[zero]].Question);
+          console.log("base questions")
+        } else if(next >= 5 && questionSetIndex.length !== 0){
+          altNext = questionSetIndex.splice(num,1);
+          setNexQue(QuestionsAndAnswer[next[zero]].QuestionSet[altNext[zero]].question);
+          console.log("alternate questions")
+          ;
+        } else{
+          alert("no more questions")
+          console.log("next!", next)
+          console.log("alt next!", altNext)
+          console.log("index length is", index.length)
+          console.log("altnext length is", questionSetIndex.length)      
+        }
       }
-    }else{
-      alert("no more questions")
     }
-  }
   
-  // console.log("nexQue is:", nexQue)
+  console.log("nexQue is:", next)
 
   return (
     <div>

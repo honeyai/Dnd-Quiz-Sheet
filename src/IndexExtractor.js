@@ -42,9 +42,9 @@ index.map(index => {
         ansIndex1.push(QuestionsAndAnswer[index].Response.indexOf(object))
       }
     })
-  } else if (index > 5){
+  } else if (index >= 5){
     QuestionsAndAnswer[index].QuestionSet.forEach(object => {
-      if (ansIndex2.length < 4) {
+      if (ansIndex2.length <= 5) {
         ansIndex2.push(QuestionsAndAnswer[index].QuestionSet.indexOf(object))
       }
     })
@@ -54,10 +54,10 @@ index.map(index => {
 shuffleArray(ansIndex1);
 shuffleArray(ansIndex2);
 
-console.log("this is ansIndex1,", ansIndex1);
-console.log("this is ansIndex2,", ansIndex2);
+// console.log("this is ansIndex1,", ansIndex1);
+// console.log("this is ansIndex2,", ansIndex2);
 
-console.log("this is questionSetIndex,", questionSetIndex)
+// console.log("this is questionSetIndex,", questionSetIndex)
 
 
 
