@@ -2,19 +2,13 @@ import React, { useState, useEffect } from 'react';
 import Question from './Question';
 import QuestionsAndAnswer from '../QuestionsAndAnswerBank';
 import {index, questionSetIndex, ansIndex1, ansIndex2} from '../IndexExtractor'
-// import { Button } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 
 
 
 let num = 0;
 let num1 = 0;
 let next = index.splice(num, 1);  
-
-const nextQuestion = () => {
-  num++;
-  next = index.splice(num, 1);
-  console.log("next!", next)
-}
 
 
 // console.log("this be index", index)
@@ -25,13 +19,32 @@ const TheQuiz = () => {
 
   const [nexQue, setNexQue] = useState(null); 
 
-  setNexQue(QuestionsAndAnswer[next[num1]].Question);
+  useEffect(()=> {
+    setNexQue(QuestionsAndAnswer[next[num1]].Question);
+  }, []);
 
+  console.log("next!", next)
+  console.log("num!", num)
+  const nextQuestion = () => {
+    // num++; 
+    // console.log("next!", next)
+    // console.log("index length is", index.length)
+    next = index.splice(num-1, 1);
+    if (index.length !== 0) {
+      if(next < 5){
+        setNexQue(QuestionsAndAnswer[next[num1]].Question);
+      } else if(next >= 5){
+        setNexQue(QuestionsAndAnswer[next[num1]].QuestionSet[0].question);
+      }
+    }else{
+      alert("no more questions")
+    }
+  }
+  
   console.log("nexQue is:", nexQue)
 
   return (
     <div>
-     { console.log("this is next,", next)}
       {
         next < 5 ? 
         <div>
@@ -39,11 +52,11 @@ const TheQuiz = () => {
         </div>
         : 
         <div>
-          <Question name= "quiz__Question" question={QuestionsAndAnswer[next].QuestionSet[0].question}/>
+          <Question name= "quiz__Question" question={nexQue}/>
         </div>
 
       }
-      <button onClick={nextQuestion}/>
+      <Button onClick={nextQuestion}>Next</Button>
     </div>
   );
 };
