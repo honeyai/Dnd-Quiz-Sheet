@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import GetRace from './Components/GetRace';
-import Question from './Components/Question';
 import TheQuiz from './Components/TheQuiz';
 
 function App() {
