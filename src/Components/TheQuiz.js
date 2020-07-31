@@ -21,25 +21,16 @@ const shuffleArray = array => {
 shuffleArray(index)
 
 console.log("this be index", index)
+console.log("this be Response", QuestionsAndAnswer[0].Response[0])
 
 const TheQuiz = () => {
   return (
     <div>
-      {
-        index.map((index, key) => {
-          return(
-            <div>
-              <Question key={key} name= "quiz__Question" question={QuestionsAndAnswer[index].Question}/>
-              {
-                index < QuestionsAndAnswer[index].Response.length ?
-                <Answers answer={QuestionsAndAnswer[index].Response[index].answer}/> 
-                : null
-              }
-            </div>
-          )})
-        }
+      <Question key={key} name= "quiz__Question" question={QuestionsAndAnswer[index].Question}/>
     </div>
   );
 };
 
 export default TheQuiz;
+
+// <Answers key={key} answer={QuestionsAndAnswer[index].Response[index].answer}/> 
