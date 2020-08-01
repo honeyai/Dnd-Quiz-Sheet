@@ -3,24 +3,15 @@ import QuestionsAndAnswer from './QuestionsAndAnswerBank';
 const index = [];
 
 QuestionsAndAnswer.forEach(question => {
-  if(QuestionsAndAnswer.indexOf(question) > 5){
-    index.push(QuestionsAndAnswer.indexOf(question));
-    index.push((QuestionsAndAnswer.indexOf(question)) + 1)
-  }
   index.push(QuestionsAndAnswer.indexOf(question))
 })
 
-/**
- *
- * Beyond MVP
- *
- */
-// const shuffleArray = array => {
-//   for (let i = array.length - 1; i > 0; i--) {
-//       const j = Math.floor(Math.random() * (i + 1));
-//       [array[i], array[j]] = [array[j], array[i]];
-//   }
-// }
+const shuffleArray = array => {
+  for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+  }
+}
 
 const questionSetIndex = [];
 
@@ -35,13 +26,8 @@ index.map(index => {
 })
 
 
-/**
- *
- * Beyond MVP
- *
- */
-// shuffleArray(index)
-// shuffleArray(questionSetIndex)
+shuffleArray(index)
+shuffleArray(questionSetIndex)
 
 
 const ansIndex1 = [];
@@ -65,14 +51,8 @@ index.map(index => {
   }
 });
 
-
-/**
- *
- * Beyond MVP
- *
- */
-// shuffleArray(ansIndex1);
-// shuffleArray(ansIndex2);
+shuffleArray(ansIndex1);
+shuffleArray(ansIndex2);
 
 // console.log("this is ansIndex1,", ansIndex1);
 // console.log("this is ansIndex2,", ansIndex2);
