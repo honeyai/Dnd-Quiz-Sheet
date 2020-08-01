@@ -1,6 +1,7 @@
 import React from "react";
 import Question from "./Question";
 import QuestionsAndAnswer from "../QuestionsAndAnswerBank";
+import Answers from "./Answers";
 import {
   index,
   questionSetIndex,
@@ -25,32 +26,52 @@ import {
 //
 
 const TheQuiz = () => {
-  // const [nexQue, setNexQue] = useState(null);
-
-  // useEffect(() => {
-  //   if (next[zero] < 5) {
-  //     setNexQue(QuestionsAndAnswer[next[zero]].Question);
-  //   } else {
-  //     setNexQue(
-  //       QuestionsAndAnswer[next[zero]].QuestionSet[altNext[zero]].question
-  //       );
-  //     }
-  //   }, []);
-
-  // console.log("index!", index);
   console.log("altIndex!", questionSetIndex);
-  // console.log("num!", num)
-  // console.log("altNext!", questionSetIndex)
+  console.log("answer index1!", ansIndex1);
 
   return (
     <div>
       {index.map((index, key) => {
         return (
-          <Question
-            key={key}
-            name="thequiz__Question"
-            question={QuestionsAndAnswer[index].Question}
-          />
+          <div>
+            <Question
+              key={key}
+              name="thequiz__Question"
+              question={QuestionsAndAnswer[index].Question}
+            />
+            <form>
+              {
+               index === 0 ? 
+                  ansIndex1.map((ans, key) => {
+                  return (
+                    <Answers
+                      key={key}
+                      name="thequiz__Answer"
+                      answer={QuestionsAndAnswer[0].Response[ans].answer}
+                    />
+                  );
+                }) : index === 1 ?
+                  ansIndex1.map((ans, key) => {
+                    return (
+                      <Answers
+                        key={key}
+                        name="thequiz__Answer"
+                        answer={QuestionsAndAnswer[1].Response[ans].answer}
+                      />
+                    );
+                  }) : index === 2 ?
+                    ansIndex1.map((ans, key) => {
+                      return (
+                        <Answers
+                          key={key}
+                          name="thequiz__Answer"
+                          answer={QuestionsAndAnswer[2].Response[ans].answer}
+                        />
+                      );
+                    }) : console.log("finish me later")
+              }
+            </form>
+          </div>
         );
       })}
       {questionSetIndex.map((index, key) => {
@@ -82,12 +103,9 @@ const TheQuiz = () => {
               question={QuestionsAndAnswer[9].QuestionSet[index].question}
             />
           </div>
-        )
+        );
       })}
-      
-       
-       
-       
+
       {/* <Button onClick={nextQuestion}> Next </Button> */}
     </div>
   );
