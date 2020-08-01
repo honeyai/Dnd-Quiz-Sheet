@@ -40,36 +40,78 @@ const TheQuiz = () => {
               question={QuestionsAndAnswer[index].Question}
             />
             <form>
-              {
-               index === 0 ? 
-                  ansIndex1.map((ans, key) => {
+              {index === 0 ? (
+                ansIndex1.map((ans, key) => {
+                  return (
+                    <label for="answer">
+                      <input name="answer" type="radio"></input>
+                      <Answers
+                        key={key}
+                        name="thequiz__Answer"
+                        answer={QuestionsAndAnswer[0].Response[ans].answer}
+                      />
+                    </label>
+                  );
+                })
+              ) : index === 1 ? (
+                ansIndex1.map((ans, key) => {
+                  return (
+                    <label for="answer">
+                      <input name="answer" type="radio"></input>
+                    <Answers
+                      key={key}
+                      name="thequiz__Answer"
+                      answer={QuestionsAndAnswer[1].Response[ans].answer}
+                    />
+                     </label>
+                  );
+                })
+              ) : index === 2 ? (
+                ansIndex1.map((ans, key) => {
                   return (
                     <Answers
                       key={key}
                       name="thequiz__Answer"
-                      answer={QuestionsAndAnswer[0].Response[ans].answer}
+                      answer={QuestionsAndAnswer[2].Response[ans].answer}
                     />
                   );
-                }) : index === 1 ?
-                  ansIndex1.map((ans, key) => {
-                    return (
-                      <Answers
-                        key={key}
-                        name="thequiz__Answer"
-                        answer={QuestionsAndAnswer[1].Response[ans].answer}
-                      />
-                    );
-                  }) : index === 2 ?
-                    ansIndex1.map((ans, key) => {
-                      return (
-                        <Answers
-                          key={key}
-                          name="thequiz__Answer"
-                          answer={QuestionsAndAnswer[2].Response[ans].answer}
-                        />
-                      );
-                    }) : console.log("finish me later")
-              }
+                })
+              ) : index === 3 ? (
+                <div>
+                  <Answers
+                    key={key}
+                    name="thequiz__Answer"
+                    answer={QuestionsAndAnswer[3].Response[0].answer}
+                  />
+                  <Answers
+                    key={key}
+                    name="thequiz__Answer"
+                    answer={QuestionsAndAnswer[3].Response[1].answer}
+                  />
+                  <Answers
+                    key={key}
+                    name="thequiz__Answer"
+                    answer={QuestionsAndAnswer[3].Response[2].answer}
+                  />
+                  <Answers
+                    key={key}
+                    name="thequiz__Answer"
+                    answer={QuestionsAndAnswer[3].Response[3].answer}
+                  />
+                </div>
+              ) : index === 4 ? (
+                ansIndex1.map((ans, key) => {
+                  return (
+                    <Answers
+                      key={key}
+                      name="thequiz__Answer"
+                      answer={QuestionsAndAnswer[4].Response[ans].answer}
+                    />
+                  );
+                })
+              ) : (
+                console.log("you're done!")
+              )}
             </form>
           </div>
         );
