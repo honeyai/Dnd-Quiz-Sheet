@@ -18,7 +18,7 @@ const questionSetIndex = [];
 index.map(index => {
   if (index > 5) {
     QuestionsAndAnswer[index].QuestionSet.forEach(question => {
-      if (questionSetIndex.length-1 < 4){
+      if (questionSetIndex.length < 4){
         questionSetIndex.push(QuestionsAndAnswer[index].QuestionSet.indexOf(question))
       }
     })

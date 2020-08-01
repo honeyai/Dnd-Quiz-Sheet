@@ -38,7 +38,7 @@ const TheQuiz = () => {
   //   }, []);
 
   // console.log("index!", index);
-  // console.log("altIndex!", questionSetIndex);
+  console.log("altIndex!", questionSetIndex);
   // console.log("num!", num)
   // console.log("altNext!", questionSetIndex)
 
@@ -53,119 +53,38 @@ const TheQuiz = () => {
           />
         );
       })}
-      <Question
-        key={0}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[5].QuestionSet[0].question}
-      />
-      <Question
-        key={1}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[5].QuestionSet[1].question}
-      />
-      <Question
-        key={2}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[5].QuestionSet[2].question}
-      />
-      <Question
-        key={3}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[5].QuestionSet[3].question}
-      />
-       
-       {/*=============================================
-       =                   index 6                   =
-       =============================================*/}
-       <Question
-        key={0}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[6].QuestionSet[0].question}
-      />
-      <Question
-        key={1}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[6].QuestionSet[1].question}
-      />
-      <Question
-        key={2}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[6].QuestionSet[2].question}
-      />
-      <Question
-        key={3}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[6].QuestionSet[3].question}
-      />
-       {/*=============================================
-       =                   index 7                   =
-       =============================================*/}
-       <Question
-        key={0}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[7].QuestionSet[0].question}
-      />
-      <Question
-        key={1}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[7].QuestionSet[1].question}
-      />
-      <Question
-        key={2}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[7].QuestionSet[2].question}
-      />
-      <Question
-        key={3}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[7].QuestionSet[3].question}
-      />
-       {/*=============================================
-       =                   index 8                   =
-       =============================================*/}
-       <Question
-        key={0}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[8].QuestionSet[0].question}
-      />
-      <Question
-        key={1}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[8].QuestionSet[1].question}
-      />
-      <Question
-        key={2}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[8].QuestionSet[2].question}
-      />
-      <Question
-        key={3}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[8].QuestionSet[3].question}
-      />
-       { /*=============================================
-       =                   index 9                   =
-       =============================================*/ }
-       <Question
-        key={0}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[9].QuestionSet[0].question}
-      />
-      <Question
-        key={1}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[9].QuestionSet[1].question}
-      />
-      <Question
-        key={2}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[9].QuestionSet[2].question}
-      />
-      <Question
-        key={3}
-        name="thequiz__Question"
-        question={QuestionsAndAnswer[9].QuestionSet[3].question}
-      />
+      {questionSetIndex.map((index, key) => {
+        return (
+          <div>
+            <Question
+              key={key}
+              name="thequiz__Question"
+              question={QuestionsAndAnswer[5].QuestionSet[index].question}
+            />
+            <Question
+              key={key}
+              name="thequiz__Question"
+              question={QuestionsAndAnswer[6].QuestionSet[index].question}
+            />
+            <Question
+              key={key}
+              name="thequiz__Question"
+              question={QuestionsAndAnswer[7].QuestionSet[index].question}
+            />
+            <Question
+              key={key}
+              name="thequiz__Question"
+              question={QuestionsAndAnswer[8].QuestionSet[index].question}
+            />
+            <Question
+              key={1}
+              name="thequiz__Question"
+              question={QuestionsAndAnswer[9].QuestionSet[index].question}
+            />
+          </div>
+        )
+      })}
+      
        
        
        
