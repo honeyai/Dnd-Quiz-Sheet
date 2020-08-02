@@ -16,6 +16,7 @@ import {
 const TheQuiz = () => {
   console.log("altIndex!", questionSetIndex);
   console.log("answer index1!", ansIndex1);
+  console.log("answer index2!", ansIndex2);
   console.log("this index!", index);
 
   return (
@@ -32,9 +33,7 @@ const TheQuiz = () => {
               ansIndex1.map((ans, key) => {
                 return (
                   <Answers
-                    id={QuestionsAndAnswer[0].Response[ans].value}
                     value={QuestionsAndAnswer[0].Response[ans].value}
-                    id={QuestionsAndAnswer[0].Response[ans].value}
                     attribute={QuestionsAndAnswer[0].Response[ans].ability}
                     key={key}
                     name="thequiz__Answer"
@@ -46,9 +45,7 @@ const TheQuiz = () => {
               ansIndex1.map((ans, key) => {
                 return (
                   <Answers
-                    id={QuestionsAndAnswer[1].Response[ans].value}
                     value={QuestionsAndAnswer[1].Response[ans].value}
-                    id={QuestionsAndAnswer[1].Response[ans].value}
                     attribute={QuestionsAndAnswer[1].Response[ans].ability}
                     key={key}
                     name="thequiz__Answer"
@@ -61,7 +58,6 @@ const TheQuiz = () => {
                 return (
                   <Answers
                     value={QuestionsAndAnswer[2].Response[ans].value}
-                    id={QuestionsAndAnswer[2].Response[ans].value}
                     attribute={QuestionsAndAnswer[2].Response[ans].ability}
                     key={key}
                     name="thequiz__Answer"
@@ -73,7 +69,6 @@ const TheQuiz = () => {
               <div>
                 <Answers
                   value={QuestionsAndAnswer[3].Response[0].value}
-                  id={QuestionsAndAnswer[3].Response[0].value}
                   attribute={QuestionsAndAnswer[3].Response[0].ability}
                   key={1}
                   name="thequiz__Answer"
@@ -81,7 +76,6 @@ const TheQuiz = () => {
                 />
                 <Answers
                   value={QuestionsAndAnswer[3].Response[1].value}
-                  id={QuestionsAndAnswer[3].Response[1].value}
                   attribute={QuestionsAndAnswer[3].Response[1].ability}
                   key={2}
                   name="thequiz__Answer"
@@ -89,7 +83,6 @@ const TheQuiz = () => {
                 />
                 <Answers
                   value={QuestionsAndAnswer[3].Response[2].value}
-                  id={QuestionsAndAnswer[3].Response[2].value}
                   attribute={QuestionsAndAnswer[3].Response[2].ability}
                   key={3}
                   name="thequiz__Answer"
@@ -97,7 +90,6 @@ const TheQuiz = () => {
                 />
                 <Answers
                   value={QuestionsAndAnswer[3].Response[3].value}
-                  id={QuestionsAndAnswer[3].Response[3].value}
                   attribute={QuestionsAndAnswer[3].Response[3].ability}
                   key={4}
                   name="thequiz__Answer"
@@ -110,7 +102,6 @@ const TheQuiz = () => {
                   <div>
                     <Answers
                       value={QuestionsAndAnswer[4].Response[ans].value}
-                      id={QuestionsAndAnswer[4].Response[ans].value}
                       attribute={QuestionsAndAnswer[4].Response[ans].ability}
                       key={key}
                       name="thequiz__Answer"
@@ -141,6 +132,10 @@ const TheQuiz = () => {
                   answer={
                     QuestionsAndAnswer[5].QuestionSet[index].answers[next]
                       .answer
+                  }
+                  value={
+                    QuestionsAndAnswer[5].QuestionSet[index].answers[next]
+                      .value
                   }
                 />
               );

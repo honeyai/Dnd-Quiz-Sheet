@@ -42,9 +42,9 @@ index.map(index => {
         ansIndex1.push(QuestionsAndAnswer[index].Response.indexOf(object))
       }
     })
-  } else if (index >= 5){
+  } else if (index > 5){
     QuestionsAndAnswer[index].QuestionSet.forEach(object => {
-      if (ansIndex2.length <= 5) {
+      if (ansIndex2.length < 4) {
         ansIndex2.push(QuestionsAndAnswer[index].QuestionSet.indexOf(object))
       }
     })
