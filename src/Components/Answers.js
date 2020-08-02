@@ -1,13 +1,18 @@
-import React from 'react';
+import React from "react";
 
-
-
-const Answers = ({answer, value, attribute}) => {
+const Answers = ({ answer, value, attribute }) => {
   return (
-    <label value={value} htmlFor="answer">
-      <input name="answer" type="radio" value={value} attribute={attribute}></input>
-      {answer}
-    </label>
+    <div>
+      <input
+        name="answer"
+        type="radio"
+        value={value}
+        attribute={attribute}
+      ></input>
+      <label htmlFor={value}>
+        {answer}
+      </label>
+    </div>
   );
 };
 
