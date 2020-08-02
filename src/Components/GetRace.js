@@ -9,11 +9,11 @@ const BASE_URL = "https://www.dnd5eapi.co/api/";
 const path = BASE_URL + "races";
 
 
-const GetRace = () => {
+const GetRace = ({endPath}) => {
   const [data, setData] = useState(null)
   async function searchRace() {
     try {
-      let response = await axios.get(path)
+      let response = await axios.get(path/{endPath})
       setData(response.data)
     } catch (error) {
       console.error("Erm... something went wrong...", error.message)
