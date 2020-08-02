@@ -13,7 +13,7 @@ const Answers = ({answer, value, attribute }) => {
 
   const handleClick = event => {
     event.preventDefault();
-    console.log("this is hopefully value,", event.target.value)
+    console.log("this is hopefully attribute,", event.target.dataset.attribute)
   }
 
   return (
@@ -21,7 +21,7 @@ const Answers = ({answer, value, attribute }) => {
       <button
         onClick={(event) => handleClick(event)}
         value={value}
-        attribute={attribute}
+        data-attribute={attribute}
       >
         {answer}
 
