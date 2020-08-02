@@ -1,7 +1,8 @@
 import React from "react";
 import Question from "./Question";
 import QuestionsAndAnswer from "../QuestionsAndAnswerBank";
-import Answers from "./Answers";
+import Answers, { finalScoreSet } from "./Answers";
+import { Button } from "@material-ui/core";
 import {
   index,
   questionSetIndex,
@@ -211,6 +212,7 @@ const TheQuiz = () => {
           </div>
         );
       })}
+      <Button />
     </form>
   );
 };
