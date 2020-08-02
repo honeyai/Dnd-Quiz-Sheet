@@ -121,73 +121,103 @@ const TheQuiz = () => {
                   </div>
                 );
               })
-            ) : index > 5 ? (
-              questionSetIndex.map((index, key) => {
-                ansIndex2.map((next, keyTheSecond) => {
-                  return (
-                    <div>
-                      <div>
-                        <Question
-                          key={key}
-                          name="thequiz__Question"
-                          question={
-                            QuestionsAndAnswer[5].QuestionSet[index].question
-                          }
-                        />
-                        <Answers
-                          key={keyTheSecond}
-                          name="thequiz_Answer"
-                          answer={
-                            QuestionsAndAnswer[5].QuestionSet[index].answers[
-                              next
-                            ]
-                          }
-                        />
-                      </div>
-                      <div>
-                        <Question
-                          key={key}
-                          name="thequiz__Question"
-                          question={
-                            QuestionsAndAnswer[6].QuestionSet[index].question
-                          }
-                        />
-                      </div>
-                      <div>
-                        <Question
-                          key={key}
-                          name="thequiz__Question"
-                          question={
-                            QuestionsAndAnswer[7].QuestionSet[index].question
-                          }
-                        />
-                      </div>
-                      <div>
-                        <Question
-                          key={key}
-                          name="thequiz__Question"
-                          question={
-                            QuestionsAndAnswer[8].QuestionSet[index].question
-                          }
-                        />
-                      </div>
-                      <Question
-                        key={1}
-                        name="thequiz__Question"
-                        question={
-                          QuestionsAndAnswer[9].QuestionSet[index].question
-                        }
-                      />
-                    </div>
-                  );
-                });
-              })
-            ) : null}
+            ) : (
+              console.log("you're done!")
+            )}
           </div>
         );
       })}
-
-      {/* <Button onClick={nextQuestion}> Next </Button> */}
+      {questionSetIndex.map((index, key) => {
+        return (
+          <div>
+            <Question
+              key={key}
+              name="thequiz__Question"
+              question={QuestionsAndAnswer[5].QuestionSet[index].question}
+            />
+            {ansIndex2.map((next, keyTheSecond) => {
+              return (
+                <Answers
+                  key={keyTheSecond}
+                  name="thequiz_Answer"
+                  answer={
+                    QuestionsAndAnswer[5].QuestionSet[index].answers[next]
+                      .answer
+                  }
+                />
+              );
+            })}
+            <Question
+              key={key}
+              name="thequiz__Question"
+              question={QuestionsAndAnswer[6].QuestionSet[index].question}
+            />
+            {ansIndex2.map((next, keyTheSecond) => {
+              return (
+                <Answers
+                  key={keyTheSecond}
+                  name="thequiz_Answer"
+                  answer={
+                    QuestionsAndAnswer[6].QuestionSet[index].answers[next]
+                      .answer
+                  }
+                />
+              );
+            })}
+            <Question
+              key={key}
+              name="thequiz__Question"
+              question={QuestionsAndAnswer[7].QuestionSet[index].question}
+            />
+            {ansIndex2.map((next, keyTheSecond) => {
+              return (
+                <Answers
+                  key={keyTheSecond}
+                  name="thequiz_Answer"
+                  answer={
+                    QuestionsAndAnswer[7].QuestionSet[index].answers[next]
+                      .answer
+                  }
+                />
+              );
+            })}
+            <Question
+              key={key}
+              name="thequiz__Question"
+              question={QuestionsAndAnswer[8].QuestionSet[index].question}
+            />
+            {ansIndex2.map((next, keyTheSecond) => {
+              return (
+                <Answers
+                  key={keyTheSecond}
+                  name="thequiz_Answer"
+                  answer={
+                    QuestionsAndAnswer[8].QuestionSet[index].answers[next]
+                      .answer
+                  }
+                />
+              );
+            })}
+            <Question
+              key={1}
+              name="thequiz__Question"
+              question={QuestionsAndAnswer[9].QuestionSet[index].question}
+            />
+            {ansIndex2.map((next, keyTheSecond) => {
+              return (
+                <Answers
+                  key={keyTheSecond}
+                  name="thequiz_Answer"
+                  answer={
+                    QuestionsAndAnswer[9].QuestionSet[index].answers[next]
+                      .answer
+                  }
+                />
+              );
+            })}
+          </div>
+        );
+      })}
     </form>
   );
 };
