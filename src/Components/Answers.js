@@ -11,8 +11,6 @@ const Answers = ({ answer, value, attribute }) => {
       intelligence: 0,
       charisma: 0,
     }
-
-  // console.log("this is the value added hopefully,", choice.strength += +event.target.value)
   
   const handleClick = (event) => {
     console.log("this is hopefully attribute,", event.target.dataset.attribute);
@@ -40,9 +38,7 @@ const Answers = ({ answer, value, attribute }) => {
       default:
         console.log("no choices have been made");
     }
-    console.log(finalScoreSet)
   };
-  
   
   return (
     <div>

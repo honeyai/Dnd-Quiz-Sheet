@@ -1,7 +1,7 @@
 import React from "react";
 import Question from "./Question";
 import QuestionsAndAnswer from "../QuestionsAndAnswerBank";
-import Answers, { finalScoreSet } from "./Answers";
+import finalScoreSet from "./Answers";
 import { Button } from "@material-ui/core";
 import {
   index,
@@ -9,16 +9,20 @@ import {
   ansIndex1,
   ansIndex2,
 } from "../IndexExtractor";
+import Answers from "./Answers";
 
-//
-// ─── START OF COMPONENT ─────────────────────────────────────────────────────────
-//
 
 const TheQuiz = () => {
-  console.log("altIndex!", questionSetIndex);
-  console.log("answer index1!", ansIndex1);
-  console.log("answer index2!", ansIndex2);
-  console.log("this index!", index);
+  // console.log("altIndex!", questionSetIndex);
+  // console.log("answer index1!", ansIndex1);
+  // console.log("answer index2!", ansIndex2);
+  // console.log("this index!", index);
+
+  const passResults = score => {
+    Object.values(score).forEach(value => {
+      console.log("these are the values,", value)
+    })
+  }
 
   return (
     <form>
@@ -129,6 +133,7 @@ const TheQuiz = () => {
               return (
                 <Answers
                   key={key}
+                  attribute={QuestionsAndAnswer[5].ability}
                   name="thequiz_Answer"
                   answer={
                     QuestionsAndAnswer[5].QuestionSet[index].answers[next]
@@ -151,6 +156,7 @@ const TheQuiz = () => {
                 <Answers
                   key={key}
                   name="thequiz_Answer"
+                  attribute={QuestionsAndAnswer[6].ability}
                   answer={
                     QuestionsAndAnswer[6].QuestionSet[index].answers[next]
                       .answer
@@ -212,7 +218,7 @@ const TheQuiz = () => {
           </div>
         );
       })}
-      <Button />
+      <Button onClick={() => passResults(finalScoreSet)}> Submit </Button>
     </form>
   );
 };
