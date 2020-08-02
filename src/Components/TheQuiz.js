@@ -9,7 +9,6 @@ import {
   ansIndex2,
 } from "../IndexExtractor";
 
-
 //
 // ─── START OF COMPONENT ─────────────────────────────────────────────────────────
 //
@@ -33,7 +32,9 @@ const TheQuiz = () => {
               ansIndex1.map((ans, key) => {
                 return (
                   <Answers
+                    id={QuestionsAndAnswer[0].Response[ans].value}
                     value={QuestionsAndAnswer[0].Response[ans].value}
+                    id={QuestionsAndAnswer[0].Response[ans].value}
                     attribute={QuestionsAndAnswer[0].Response[ans].ability}
                     key={key}
                     name="thequiz__Answer"
@@ -45,7 +46,9 @@ const TheQuiz = () => {
               ansIndex1.map((ans, key) => {
                 return (
                   <Answers
+                    id={QuestionsAndAnswer[1].Response[ans].value}
                     value={QuestionsAndAnswer[1].Response[ans].value}
+                    id={QuestionsAndAnswer[1].Response[ans].value}
                     attribute={QuestionsAndAnswer[1].Response[ans].ability}
                     key={key}
                     name="thequiz__Answer"
@@ -58,6 +61,7 @@ const TheQuiz = () => {
                 return (
                   <Answers
                     value={QuestionsAndAnswer[2].Response[ans].value}
+                    id={QuestionsAndAnswer[2].Response[ans].value}
                     attribute={QuestionsAndAnswer[2].Response[ans].ability}
                     key={key}
                     name="thequiz__Answer"
@@ -69,29 +73,33 @@ const TheQuiz = () => {
               <div>
                 <Answers
                   value={QuestionsAndAnswer[3].Response[0].value}
+                  id={QuestionsAndAnswer[3].Response[0].value}
                   attribute={QuestionsAndAnswer[3].Response[0].ability}
-                  key={key}
+                  key={1}
                   name="thequiz__Answer"
                   answer={QuestionsAndAnswer[3].Response[0].answer}
                 />
                 <Answers
                   value={QuestionsAndAnswer[3].Response[1].value}
+                  id={QuestionsAndAnswer[3].Response[1].value}
                   attribute={QuestionsAndAnswer[3].Response[1].ability}
-                  key={key}
+                  key={2}
                   name="thequiz__Answer"
                   answer={QuestionsAndAnswer[3].Response[1].answer}
                 />
                 <Answers
                   value={QuestionsAndAnswer[3].Response[2].value}
+                  id={QuestionsAndAnswer[3].Response[2].value}
                   attribute={QuestionsAndAnswer[3].Response[2].ability}
-                  key={key}
+                  key={3}
                   name="thequiz__Answer"
                   answer={QuestionsAndAnswer[3].Response[2].answer}
                 />
                 <Answers
                   value={QuestionsAndAnswer[3].Response[3].value}
+                  id={QuestionsAndAnswer[3].Response[3].value}
                   attribute={QuestionsAndAnswer[3].Response[3].ability}
-                  key={key}
+                  key={4}
                   name="thequiz__Answer"
                   answer={QuestionsAndAnswer[3].Response[3].answer}
                 />
@@ -102,6 +110,7 @@ const TheQuiz = () => {
                   <div>
                     <Answers
                       value={QuestionsAndAnswer[4].Response[ans].value}
+                      id={QuestionsAndAnswer[4].Response[ans].value}
                       attribute={QuestionsAndAnswer[4].Response[ans].ability}
                       key={key}
                       name="thequiz__Answer"
@@ -124,10 +133,10 @@ const TheQuiz = () => {
               name="thequiz__Question"
               question={QuestionsAndAnswer[5].QuestionSet[index].question}
             />
-            {ansIndex2.map((next, keyTheSecond) => {
+            {ansIndex2.map((next) => {
               return (
                 <Answers
-                  key={keyTheSecond}
+                  key={key}
                   name="thequiz_Answer"
                   answer={
                     QuestionsAndAnswer[5].QuestionSet[index].answers[next]
@@ -141,10 +150,10 @@ const TheQuiz = () => {
               name="thequiz__Question"
               question={QuestionsAndAnswer[6].QuestionSet[index].question}
             />
-            {ansIndex2.map((next, keyTheSecond) => {
+            {ansIndex2.map((next) => {
               return (
                 <Answers
-                  key={keyTheSecond}
+                  key={key}
                   name="thequiz_Answer"
                   answer={
                     QuestionsAndAnswer[6].QuestionSet[index].answers[next]
@@ -158,10 +167,10 @@ const TheQuiz = () => {
               name="thequiz__Question"
               question={QuestionsAndAnswer[7].QuestionSet[index].question}
             />
-            {ansIndex2.map((next, keyTheSecond) => {
+            {ansIndex2.map((next) => {
               return (
                 <Answers
-                  key={keyTheSecond}
+                  key={key}
                   name="thequiz_Answer"
                   answer={
                     QuestionsAndAnswer[7].QuestionSet[index].answers[next]
@@ -175,10 +184,10 @@ const TheQuiz = () => {
               name="thequiz__Question"
               question={QuestionsAndAnswer[8].QuestionSet[index].question}
             />
-            {ansIndex2.map((next, keyTheSecond) => {
+            {ansIndex2.map((next) => {
               return (
                 <Answers
-                  key={keyTheSecond}
+                  key={key}
                   name="thequiz_Answer"
                   answer={
                     QuestionsAndAnswer[8].QuestionSet[index].answers[next]
@@ -192,10 +201,10 @@ const TheQuiz = () => {
               name="thequiz__Question"
               question={QuestionsAndAnswer[9].QuestionSet[index].question}
             />
-            {ansIndex2.map((next, keyTheSecond) => {
+            {ansIndex2.map((next) => {
               return (
                 <Answers
-                  key={keyTheSecond}
+                  key={key}
                   name="thequiz_Answer"
                   answer={
                     QuestionsAndAnswer[9].QuestionSet[index].answers[next]

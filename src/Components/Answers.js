@@ -1,18 +1,20 @@
 import React from "react";
+import { Button}  from "@material-ui/core";
 
-const Answers = ({ answer, value, attribute }) => {
+const Answers = ({answer, value, attribute }) => {
   return (
     <div>
-      <input
+      <Button
         name="answer"
-        id={value}
         type="radio"
         value={value}
         attribute={attribute}
-      ></input>
-      <label htmlFor={value}>
+      >
         {answer}
-      </label>
+
+      </Button>
+      {/* <label htmlFor="answer"> */}
+      {/* </label> */}
     </div>
   );
 };
