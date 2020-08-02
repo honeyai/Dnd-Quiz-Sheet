@@ -5,6 +5,7 @@ const Answers = ({ answer, value, attribute }) => {
     <div>
       <input
         name="answer"
+        id={value}
         type="radio"
         value={value}
         attribute={attribute}

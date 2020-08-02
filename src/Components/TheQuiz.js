@@ -8,18 +8,7 @@ import {
   ansIndex1,
   ansIndex2,
 } from "../IndexExtractor";
-// import { Button } from "@material-ui/core";
 
-//
-// ─── VARIABLES ──────────────────────────────────────────────────────────────────
-//
-
-// let num = 0;
-// let zero = 0;
-// let next = index.splice(num, 1);
-// let altNext = questionSetIndex.splice(num, 1);
-
-// ────────────────────────────────────────────────────────────────────────────────
 
 //
 // ─── START OF COMPONENT ─────────────────────────────────────────────────────────
