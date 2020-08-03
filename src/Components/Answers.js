@@ -54,4 +54,6 @@ const Answers = ({ answer, value, attribute }) => {
   );
 };
 
-export default ({finalScoreSet}, Answers);
+export {finalScoreSet};
+  
+export default Answers;

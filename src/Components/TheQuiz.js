@@ -1,7 +1,7 @@
 import React from "react";
 import Question from "./Question";
 import QuestionsAndAnswer from "../QuestionsAndAnswerBank";
-import finalScoreSet from "./Answers";
+import { finalScoreSet } from "./Answers";
 import { Button } from "@material-ui/core";
 import {
   index,
@@ -19,7 +19,7 @@ const TheQuiz = () => {
   // console.log("this index!", index);
 
   const passResults = score => {
-    console.log("these are the scores,", score.finalScoreSet)
+    console.log("these are the scores,", score)
 
     Object.values(score).forEach(value => {
       console.log("these are the values,", value)
