@@ -12,6 +12,20 @@ import {
 import Answers from "./Answers";
 
 
+let endPath;
+
+let raceBank = {
+  strength: ["half-orc", "dragonborn"],
+  dexterity: ["elf", "halfling"],
+  constitution: "dwarf",
+  intelligence: "gnome",
+  charisma: ["half-elf", "tiefling"]
+}
+
+const tieBreaker = array =>  {
+  let index = Math.floor(Math.random() * array.length)
+  return index;
+};
 
 
 const TheQuiz = () => {
@@ -33,10 +47,15 @@ const TheQuiz = () => {
 
     if(max - min <= 2) {
       console.log("they're going to get human or half elf")
+      let tie = ["half-elf", "human"];
+      endPath = tie[tieBreaker(tie)];
     } else {
+      console.log("th
+      is is endpath,", endPath);
       console.log(getAttribute(score, max))
     }
   }
+
 
   return (
     <form>
