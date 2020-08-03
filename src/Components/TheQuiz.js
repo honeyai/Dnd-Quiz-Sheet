@@ -50,8 +50,10 @@ const TheQuiz = () => {
       let tie = ["half-elf", "human"];
       endPath = tie[tieBreaker(tie)];
     } else {
-      console.log("this is endpath,", endPath);
       console.log(getAttribute(score, max))
+      let filtered = getAttribute(score, max); //trying to get the answer out of this filter array
+      let result = filter[0];
+      console.log("this is result,", result);
     }
   }
 
