@@ -9,7 +9,7 @@ const Answers = ({ answer, value, attribute }) => {
       constitution: 0,
       intelligence: 0,
       charisma: 0,
-    }
+    };
   
   const handleClick = (event) => {
     console.log("this is hopefully attribute,", event.target.dataset.attribute);
@@ -43,7 +43,7 @@ const Answers = ({ answer, value, attribute }) => {
   return (
     <div>
       <button
-        onClick={(event) => handleClick(event)}
+        onClick={(event) => {handleClick(event); console.log("finalScoreSet:", finalScoreSet)}}
         value={value}
         data-attribute={attribute}
       >

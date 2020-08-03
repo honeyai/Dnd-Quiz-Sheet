@@ -38,7 +38,7 @@ const TheQuiz = () => {
               question={QuestionsAndAnswer[index].Question}
             />
             {index === 0 ? (
-              ansIndex1.map((ans, key) => {
+              ansIndex1.map(ans => {
                 return (
                   <Answers
                     value={QuestionsAndAnswer[0].Response[ans].value}
@@ -50,7 +50,7 @@ const TheQuiz = () => {
                 );
               })
             ) : index === 1 ? (
-              ansIndex1.map((ans, key) => {
+              ansIndex1.map(ans => {
                 return (
                   <Answers
                     value={QuestionsAndAnswer[1].Response[ans].value}
@@ -62,7 +62,7 @@ const TheQuiz = () => {
                 );
               })
             ) : index === 2 ? (
-              ansIndex1.map((ans, key) => {
+              ansIndex1.map(ans => {
                 return (
                   <Answers
                     value={QuestionsAndAnswer[2].Response[ans].value}
@@ -78,34 +78,34 @@ const TheQuiz = () => {
                 <Answers
                   value={QuestionsAndAnswer[3].Response[0].value}
                   attribute={QuestionsAndAnswer[3].Response[0].ability}
-                  key={1}
+                  key={101}
                   name="thequiz__Answer"
                   answer={QuestionsAndAnswer[3].Response[0].answer}
                 />
                 <Answers
                   value={QuestionsAndAnswer[3].Response[1].value}
                   attribute={QuestionsAndAnswer[3].Response[1].ability}
-                  key={2}
+                  key={102}
                   name="thequiz__Answer"
                   answer={QuestionsAndAnswer[3].Response[1].answer}
                 />
                 <Answers
                   value={QuestionsAndAnswer[3].Response[2].value}
                   attribute={QuestionsAndAnswer[3].Response[2].ability}
-                  key={3}
+                  key={103}
                   name="thequiz__Answer"
                   answer={QuestionsAndAnswer[3].Response[2].answer}
                 />
                 <Answers
                   value={QuestionsAndAnswer[3].Response[3].value}
                   attribute={QuestionsAndAnswer[3].Response[3].ability}
-                  key={4}
+                  key={104}
                   name="thequiz__Answer"
                   answer={QuestionsAndAnswer[3].Response[3].answer}
                 />
               </div>
             ) : index === 4 ? (
-              ansIndex1.map((ans, key) => {
+              ansIndex1.map((ans) => {
                 return (
                   <div>
                     <Answers
@@ -124,18 +124,18 @@ const TheQuiz = () => {
           </div>
         );
       })}
-      {questionSetIndex.map((index, key) => {
+      {questionSetIndex.map(index => {
         return (
           <div>
             <Question
-              key={key}
+              key={99}
               name="thequiz__Question"
               question={QuestionsAndAnswer[5].QuestionSet[index].question}
             />
             {ansIndex2.map((next) => {
               return (
                 <Answers
-                  key={key}
+                  key={100}
                   attribute={QuestionsAndAnswer[5].ability}
                   name="thequiz_Answer"
                   answer={
@@ -150,14 +150,14 @@ const TheQuiz = () => {
               );
             })}
             <Question
-              key={key}
+              key={101}
               name="thequiz__Question"
               question={QuestionsAndAnswer[6].QuestionSet[index].question}
             />
             {ansIndex2.map((next) => {
               return (
                 <Answers
-                  key={key}
+                  key={106}
                   name="thequiz_Answer"
                   attribute={QuestionsAndAnswer[6].ability}
                   answer={
@@ -168,14 +168,14 @@ const TheQuiz = () => {
               );
             })}
             <Question
-              key={key}
+              key={107}
               name="thequiz__Question"
               question={QuestionsAndAnswer[7].QuestionSet[index].question}
             />
             {ansIndex2.map((next) => {
               return (
                 <Answers
-                  key={key}
+                  key={108}
                   name="thequiz_Answer"
                   attribute={QuestionsAndAnswer[7].ability}
                   answer={
@@ -186,14 +186,14 @@ const TheQuiz = () => {
               );
             })}
             <Question
-              key={key}
+              key={109}
               name="thequiz__Question"
               question={QuestionsAndAnswer[8].QuestionSet[index].question}
             />
             {ansIndex2.map((next) => {
               return (
                 <Answers
-                  key={key}
+                  key={110}
                   name="thequiz_Answer"
                   attribute={QuestionsAndAnswer[8].ability}
                   answer={
@@ -204,14 +204,14 @@ const TheQuiz = () => {
               );
             })}
             <Question
-              key={1}
+              key={111}
               name="thequiz__Question"
               question={QuestionsAndAnswer[9].QuestionSet[index].question}
             />
             {ansIndex2.map((next) => {
               return (
                 <Answers
-                  key={key}
+                  key={112}
                   name="thequiz_Answer"
                   attribute={QuestionsAndAnswer[9].ability}
                   answer={
