@@ -5,17 +5,15 @@ import React, {
 import { endPath } from './TheQuiz';
 import axios from 'axios';
 
-const BASE_URL = "https://www.dnd5eapi.co/api/";
-
-const path = BASE_URL + "races";
-
+const BASE_URL = "https://www.dnd5eapi.co/api/races/";
 
 const GetRace = () => {
   const [data, setData] = useState(null)
   async function searchRace() {
     try {
-      let response = await axios.get(path/endPath)
+      let response = await axios.get(BASE_URL + endPath)
       setData(response.data)
+      console.log(response.data)
     } catch (error) {
       console.error("Erm... something went wrong...", error.message)
     }
@@ -25,13 +23,14 @@ const GetRace = () => {
     searchRace();
   }, [])
 
-  console.log("This is data:", data)
-  console.log("This is the url:", path)
+  // console.log("This is data:", data)
 
+  console.log("this is endPath,", endPath)
   return ( 
-    <div >
-      {data}
-    </div>
+    data ? 
+      <div >
+        {data.name}
+      </div> : <div>Nothing to see here</div>
   );
 };
 
