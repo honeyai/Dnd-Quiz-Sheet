@@ -4,6 +4,7 @@ import React, {
 } from 'react';
 import { endPath } from './TheQuiz';
 import axios from 'axios';
+import Results from './Results';
 
 const BASE_URL = "https://www.dnd5eapi.co/api/races/";
 
@@ -29,7 +30,14 @@ const GetRace = () => {
   return ( 
     data ? 
       <div >
-        {data.name}
+        <Results 
+          index={data.index}
+          description={data.size_description}
+          race={data.name}
+          language_desc={data.language_desc}
+          speed={data.speed}
+          languages={data.languages}
+        />
       </div> : <div>Nothing to see here</div>
   );
 };

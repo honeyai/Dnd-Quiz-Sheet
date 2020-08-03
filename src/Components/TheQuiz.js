@@ -75,7 +75,7 @@ const TheQuiz = () => {
 
   return (
     <div>
-      <div>
+      <div className="thequiz__SuperContainer">
         {index.map((index, key) => {
           if (index < 5) {
             return (
@@ -341,8 +341,7 @@ const TheQuiz = () => {
           );
         })}
         <Button id="thequiz__Button" onClick={() => passResults(finalScoreSet)}>
-          {" "}
-          Submit{" "}
+          Submit
         </Button>
       </div>
       {show ? <GetRace /> : null}

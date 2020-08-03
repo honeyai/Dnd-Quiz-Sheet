@@ -7,6 +7,11 @@
 
 #thequiz__Button {
   background-color: azure;
+  margin-left: 27vw;
+}
+
+#thequiz__Button:target {
+  border: rgb(206, 201, 196);
 }
 
 .thequiz__Question {
@@ -20,5 +25,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
+}
+
+.thequiz__SuperContainer {
+  /* border: turquoise solid; */
+  justify-content: center;
 }
