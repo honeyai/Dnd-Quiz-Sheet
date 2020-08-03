@@ -50,8 +50,7 @@ const TheQuiz = () => {
       let tie = ["half-elf", "human"];
       endPath = tie[tieBreaker(tie)];
     } else {
-      console.log("th
-      is is endpath,", endPath);
+      console.log("this is endpath,", endPath);
       console.log(getAttribute(score, max))
     }
   }
