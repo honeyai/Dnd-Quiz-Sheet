@@ -177,6 +177,7 @@ const TheQuiz = () => {
                 <Answers
                   key={key}
                   name="thequiz_Answer"
+                  attribute={QuestionsAndAnswer[7].ability}
                   answer={
                     QuestionsAndAnswer[7].QuestionSet[index].answers[next]
                       .answer
@@ -194,6 +195,7 @@ const TheQuiz = () => {
                 <Answers
                   key={key}
                   name="thequiz_Answer"
+                  attribute={QuestionsAndAnswer[8].ability}
                   answer={
                     QuestionsAndAnswer[8].QuestionSet[index].answers[next]
                       .answer
@@ -211,6 +213,7 @@ const TheQuiz = () => {
                 <Answers
                   key={key}
                   name="thequiz_Answer"
+                  attribute={QuestionsAndAnswer[9].ability}
                   answer={
                     QuestionsAndAnswer[9].QuestionSet[index].answers[next]
                       .answer
