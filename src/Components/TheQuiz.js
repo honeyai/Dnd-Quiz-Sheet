@@ -57,7 +57,8 @@ const TheQuiz = () => {
       Object.entries(raceBank).forEach(pairs => {
         console.log("these are the pairs,", pairs)
         if (pairs[0] === result) {
-          console.log("this might work,")
+          console.log("this might work,", pairs[1][0]);
+          endPath= pairs[1][0];
         }
       })
     }
