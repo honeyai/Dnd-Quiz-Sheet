@@ -19,7 +19,7 @@ const TheQuiz = () => {
   // console.log("this index!", index);
 
   const passResults = score => {
-    console.log("these are the scores,", score)
+    console.log("these are the scores,", score.finalScoreSet)
 
     Object.values(score).forEach(value => {
       console.log("these are the values,", value)
@@ -119,7 +119,8 @@ const TheQuiz = () => {
                 );
               })
             ) : (
-              console.log("you're done!")
+              null
+              // console.log("you're done!")
             )}
           </div>
         );
@@ -164,6 +165,10 @@ const TheQuiz = () => {
                     QuestionsAndAnswer[6].QuestionSet[index].answers[next]
                       .answer
                   }
+                  value={
+                    QuestionsAndAnswer[6].QuestionSet[index].answers[next]
+                      .value
+                  }
                 />
               );
             })}
@@ -181,6 +186,10 @@ const TheQuiz = () => {
                   answer={
                     QuestionsAndAnswer[7].QuestionSet[index].answers[next]
                       .answer
+                  }
+                  value={
+                    QuestionsAndAnswer[7].QuestionSet[index].answers[next]
+                      .value
                   }
                 />
               );
@@ -200,6 +209,10 @@ const TheQuiz = () => {
                     QuestionsAndAnswer[8].QuestionSet[index].answers[next]
                       .answer
                   }
+                  value={
+                    QuestionsAndAnswer[8].QuestionSet[index].answers[next]
+                      .value
+                  }
                 />
               );
             })}
@@ -217,6 +230,10 @@ const TheQuiz = () => {
                   answer={
                     QuestionsAndAnswer[9].QuestionSet[index].answers[next]
                       .answer
+                  }
+                  value={
+                    QuestionsAndAnswer[9].QuestionSet[index].answers[next]
+                      .value
                   }
                 />
               );

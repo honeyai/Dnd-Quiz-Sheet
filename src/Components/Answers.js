@@ -2,14 +2,15 @@ import React from "react";
 
 let finalScoreSet ;
 
+finalScoreSet = {
+    strength: 0,
+    dexterity: 0,
+    constitution: 0,
+    intelligence: 0,
+    charisma: 0,
+  };
+
 const Answers = ({ answer, value, attribute }) => {
-  finalScoreSet = {
-      strength: 0,
-      dexterity: 0,
-      constitution: 0,
-      intelligence: 0,
-      charisma: 0,
-    };
   
   const handleClick = (event) => {
     console.log("this is hopefully attribute,", event.target.dataset.attribute);
@@ -53,4 +54,4 @@ const Answers = ({ answer, value, attribute }) => {
   );
 };
 
-export default ({ finalScoreSet }, Answers);
+export default ({finalScoreSet}, Answers);
