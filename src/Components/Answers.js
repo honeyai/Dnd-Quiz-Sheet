@@ -34,6 +34,7 @@ const Answers = ({ answer, value, attribute }) => {
       case "strength,dexterity":
         finalScoreSet.strength += +event.target.value;
         finalScoreSet.dexterity += +event.target.value;
+        break;
       default:
         console.log("no choices have been made");
     }
