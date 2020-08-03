@@ -12,6 +12,8 @@ import {
 import Answers from "./Answers";
 
 
+
+
 const TheQuiz = () => {
   // console.log("altIndex!", questionSetIndex);
   // console.log("answer index1!", ansIndex1);
@@ -19,12 +21,21 @@ const TheQuiz = () => {
   // console.log("this index!", index);
 
   const passResults = score => {
-    console.log("these are the scores,", score)
+    let scores = Object.values(score);
 
-    Object.values(score).forEach(value => {
-      console.log("these are the values,", value)
-      //compare with the last to see which is the highest and if they're all even assign half elf or human
-    })
+    let min = Math.min(...scores);
+
+    let max = Math.max(...scores);
+    
+    const getAttribute = (object, value) => Object.keys(object).filter(key => object[key] === value);
+
+    console.log(min, max); //if these have less than two of difference from each other max-min <= 2 take the max and find the attribute
+
+    if(max - min <= 2) {
+      console.log("they're going to get human or half elf")
+    } else {
+      console.log(getAttribute(score, max))
+    }
   }
 
   return (
