@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Question from "./Question";
 import QuestionsAndAnswer from "../QuestionsAndAnswerBank";
 import { finalScoreSet } from "./Answers";
-import { Button } from "@material-ui/core";
+import { Button, Card } from "@material-ui/core";
 import {
   index,
   questionSetIndex,
@@ -11,6 +11,7 @@ import {
 } from "../IndexExtractor";
 import Answers from "./Answers";
 import GetRace from "./GetRace";
+import "../Styles/thequiz.css";
 
 let endPath;
 
@@ -77,212 +78,233 @@ const TheQuiz = () => {
       <div>
         {index.map((index, key) => {
           return (
-            <div>
-              <Question
-                key={key}
-                name="thequiz__Question"
-                question={QuestionsAndAnswer[index].Question}
-              />
-              {index === 0 ? (
-                ansIndex1.map((ans, key) => {
-                  return (
-                    <Answers
-                      value={QuestionsAndAnswer[0].Response[ans].value}
-                      attribute={QuestionsAndAnswer[0].Response[ans].ability}
-                      key={key}
-                      name="thequiz__Answer"
-                      answer={QuestionsAndAnswer[0].Response[ans].answer}
-                    />
-                  );
-                })
-              ) : index === 1 ? (
-                ansIndex1.map((ans, key) => {
-                  return (
-                    <Answers
-                      value={QuestionsAndAnswer[1].Response[ans].value}
-                      attribute={QuestionsAndAnswer[1].Response[ans].ability}
-                      key={key}
-                      name="thequiz__Answer"
-                      answer={QuestionsAndAnswer[1].Response[ans].answer}
-                    />
-                  );
-                })
-              ) : index === 2 ? (
-                ansIndex1.map((ans, key) => {
-                  return (
-                    <Answers
-                      value={QuestionsAndAnswer[2].Response[ans].value}
-                      attribute={QuestionsAndAnswer[2].Response[ans].ability}
-                      key={key}
-                      name="thequiz__Answer"
-                      answer={QuestionsAndAnswer[2].Response[ans].answer}
-                    />
-                  );
-                })
-              ) : index === 3 ? (
-                <div>
-                  <Answers
-                    value={QuestionsAndAnswer[3].Response[0].value}
-                    attribute={QuestionsAndAnswer[3].Response[0].ability}
-                    key={1}
-                    name="thequiz__Answer"
-                    answer={QuestionsAndAnswer[3].Response[0].answer}
-                  />
-                  <Answers
-                    value={QuestionsAndAnswer[3].Response[1].value}
-                    attribute={QuestionsAndAnswer[3].Response[1].ability}
-                    key={2}
-                    name="thequiz__Answer"
-                    answer={QuestionsAndAnswer[3].Response[1].answer}
-                  />
-                  <Answers
-                    value={QuestionsAndAnswer[3].Response[2].value}
-                    attribute={QuestionsAndAnswer[3].Response[2].ability}
-                    key={3}
-                    name="thequiz__Answer"
-                    answer={QuestionsAndAnswer[3].Response[2].answer}
-                  />
-                  <Answers
-                    value={QuestionsAndAnswer[3].Response[3].value}
-                    attribute={QuestionsAndAnswer[3].Response[3].ability}
-                    key={4}
-                    name="thequiz__Answer"
-                    answer={QuestionsAndAnswer[3].Response[3].answer}
-                  />
-                </div>
-              ) : index === 4 ? (
-                ansIndex1.map((ans, key) => {
-                  return (
+            <Card id="thequiz__Card">
+              <div>
+                <Question
+                  key={key}
+                  name="thequiz__Question"
+                  question={QuestionsAndAnswer[index].Question}
+                />
+                {
+                  index === 0 ? (
+                    ansIndex1.map((ans, key) => {
+                      return (
+                        <Answers
+                          value={QuestionsAndAnswer[0].Response[ans].value}
+                          attribute={
+                            QuestionsAndAnswer[0].Response[ans].ability
+                          }
+                          key={key}
+                          name="thequiz__Answer"
+                          answer={QuestionsAndAnswer[0].Response[ans].answer}
+                        />
+                      );
+                    })
+                  ) : index === 1 ? (
+                    ansIndex1.map((ans, key) => {
+                      return (
+                        <Answers
+                          value={QuestionsAndAnswer[1].Response[ans].value}
+                          attribute={
+                            QuestionsAndAnswer[1].Response[ans].ability
+                          }
+                          key={key}
+                          name="thequiz__Answer"
+                          answer={QuestionsAndAnswer[1].Response[ans].answer}
+                        />
+                      );
+                    })
+                  ) : index === 2 ? (
+                    ansIndex1.map((ans, key) => {
+                      return (
+                        <Answers
+                          value={QuestionsAndAnswer[2].Response[ans].value}
+                          attribute={
+                            QuestionsAndAnswer[2].Response[ans].ability
+                          }
+                          key={key}
+                          name="thequiz__Answer"
+                          answer={QuestionsAndAnswer[2].Response[ans].answer}
+                        />
+                      );
+                    })
+                  ) : index === 3 ? (
                     <div>
                       <Answers
-                        value={QuestionsAndAnswer[4].Response[ans].value}
-                        key={key}
-                        attribute={QuestionsAndAnswer[4].Response[ans].ability}
+                        value={QuestionsAndAnswer[3].Response[0].value}
+                        attribute={QuestionsAndAnswer[3].Response[0].ability}
+                        key={1}
                         name="thequiz__Answer"
-                        answer={QuestionsAndAnswer[4].Response[ans].answer}
+                        answer={QuestionsAndAnswer[3].Response[0].answer}
+                      />
+                      <Answers
+                        value={QuestionsAndAnswer[3].Response[1].value}
+                        attribute={QuestionsAndAnswer[3].Response[1].ability}
+                        key={2}
+                        name="thequiz__Answer"
+                        answer={QuestionsAndAnswer[3].Response[1].answer}
+                      />
+                      <Answers
+                        value={QuestionsAndAnswer[3].Response[2].value}
+                        attribute={QuestionsAndAnswer[3].Response[2].ability}
+                        key={3}
+                        name="thequiz__Answer"
+                        answer={QuestionsAndAnswer[3].Response[2].answer}
+                      />
+                      <Answers
+                        value={QuestionsAndAnswer[3].Response[3].value}
+                        attribute={QuestionsAndAnswer[3].Response[3].ability}
+                        key={4}
+                        name="thequiz__Answer"
+                        answer={QuestionsAndAnswer[3].Response[3].answer}
                       />
                     </div>
-                  );
-                })
-              ) : null
-              // console.log("you're done!")
-              }
-            </div>
+                  ) : index === 4 ? (
+                    ansIndex1.map((ans, key) => {
+                      return (
+                        <div>
+                          <Answers
+                            value={QuestionsAndAnswer[4].Response[ans].value}
+                            key={key}
+                            attribute={
+                              QuestionsAndAnswer[4].Response[ans].ability
+                            }
+                            name="thequiz__Answer"
+                            answer={QuestionsAndAnswer[4].Response[ans].answer}
+                          />
+                        </div>
+                      );
+                    })
+                  ) : null
+                  // console.log("you're done!")
+                }
+              </div>
+            </Card>
           );
         })}
         {questionSetIndex.map((index) => {
           return (
             <div>
-              <Question
-                key={500}
-                name="thequiz__Question"
-                question={QuestionsAndAnswer[5].QuestionSet[index].question}
-              />
-              {ansIndex2.map((next, key) => {
-                return (
-                  <Answers
-                    key={key}
-                    attribute={QuestionsAndAnswer[5].ability}
-                    name="thequiz_Answer"
-                    answer={
-                      QuestionsAndAnswer[5].QuestionSet[index].answers[next]
-                        .answer
-                    }
-                    value={
-                      QuestionsAndAnswer[5].QuestionSet[index].answers[next]
-                        .value
-                    }
-                  />
-                );
-              })}
-              <Question
-                key={502}
-                name="thequiz__Question"
-                question={QuestionsAndAnswer[6].QuestionSet[index].question}
-              />
-              {ansIndex2.map((next, key) => {
-                return (
-                  <Answers
-                    key={key}
-                    name="thequiz_Answer"
-                    attribute={QuestionsAndAnswer[6].ability}
-                    answer={
-                      QuestionsAndAnswer[6].QuestionSet[index].answers[next]
-                        .answer
-                    }
-                    value={
-                      QuestionsAndAnswer[6].QuestionSet[index].answers[next]
-                        .value
-                    }
-                  />
-                );
-              })}
-              <Question
-                key={504}
-                name="thequiz__Question"
-                question={QuestionsAndAnswer[7].QuestionSet[index].question}
-              />
-              {ansIndex2.map((next, key) => {
-                return (
-                  <Answers
-                    key={key}
-                    name="thequiz_Answer"
-                    attribute={QuestionsAndAnswer[7].ability}
-                    answer={
-                      QuestionsAndAnswer[7].QuestionSet[index].answers[next]
-                        .answer
-                    }
-                    value={
-                      QuestionsAndAnswer[7].QuestionSet[index].answers[next]
-                        .value
-                    }
-                  />
-                );
-              })}
-              <Question
-                key={506}
-                name="thequiz__Question"
-                question={QuestionsAndAnswer[8].QuestionSet[index].question}
-              />
-              {ansIndex2.map((next, key) => {
-                return (
-                  <Answers
-                    key={key}
-                    name="thequiz_Answer"
-                    attribute={QuestionsAndAnswer[8].ability}
-                    answer={
-                      QuestionsAndAnswer[8].QuestionSet[index].answers[next]
-                        .answer
-                    }
-                    value={
-                      QuestionsAndAnswer[8].QuestionSet[index].answers[next]
-                        .value
-                    }
-                  />
-                );
-              })}
-              <Question
-                key={508}
-                name="thequiz__Question"
-                question={QuestionsAndAnswer[9].QuestionSet[index].question}
-              />
-              {ansIndex2.map((next, key) => {
-                return (
-                  <Answers
-                    key={key}
-                    name="thequiz_Answer"
-                    attribute={QuestionsAndAnswer[9].ability}
-                    answer={
-                      QuestionsAndAnswer[9].QuestionSet[index].answers[next]
-                        .answer
-                    }
-                    value={
-                      QuestionsAndAnswer[9].QuestionSet[index].answers[next]
-                        .value
-                    }
-                  />
-                );
-              })}
+              <Card id="thequiz__Card">
+                <Question
+                  key={500}
+                  name="thequiz__Question"
+                  question={QuestionsAndAnswer[5].QuestionSet[index].question}
+                />
+                {ansIndex2.map((next, key) => {
+                  return (
+                    <Answers
+                      key={key}
+                      attribute={QuestionsAndAnswer[5].ability}
+                      name="thequiz_Answer"
+                      answer={
+                        QuestionsAndAnswer[5].QuestionSet[index].answers[next]
+                          .answer
+                      }
+                      value={
+                        QuestionsAndAnswer[5].QuestionSet[index].answers[next]
+                          .value
+                      }
+                    />
+                  );
+                })}
+              </Card>
+              <Card id="thequiz__Card">
+                <Question
+                  key={502}
+                  name="thequiz__Question"
+                  question={QuestionsAndAnswer[6].QuestionSet[index].question}
+                />
+                {ansIndex2.map((next, key) => {
+                  return (
+                    <Answers
+                      key={key}
+                      name="thequiz_Answer"
+                      attribute={QuestionsAndAnswer[6].ability}
+                      answer={
+                        QuestionsAndAnswer[6].QuestionSet[index].answers[next]
+                          .answer
+                      }
+                      value={
+                        QuestionsAndAnswer[6].QuestionSet[index].answers[next]
+                          .value
+                      }
+                    />
+                  );
+                })}
+              </Card>
+              <Card id="thequiz__Card">
+                <Question
+                  key={504}
+                  name="thequiz__Question"
+                  question={QuestionsAndAnswer[7].QuestionSet[index].question}
+                />
+                {ansIndex2.map((next, key) => {
+                  return (
+                    <Answers
+                      key={key}
+                      name="thequiz_Answer"
+                      attribute={QuestionsAndAnswer[7].ability}
+                      answer={
+                        QuestionsAndAnswer[7].QuestionSet[index].answers[next]
+                          .answer
+                      }
+                      value={
+                        QuestionsAndAnswer[7].QuestionSet[index].answers[next]
+                          .value
+                      }
+                    />
+                  );
+                })}
+              </Card>
+              <Card id="thequiz__Card">
+                <Question
+                  key={506}
+                  name="thequiz__Question"
+                  question={QuestionsAndAnswer[8].QuestionSet[index].question}
+                />
+                {ansIndex2.map((next, key) => {
+                  return (
+                    <Answers
+                      key={key}
+                      name="thequiz_Answer"
+                      attribute={QuestionsAndAnswer[8].ability}
+                      answer={
+                        QuestionsAndAnswer[8].QuestionSet[index].answers[next]
+                          .answer
+                      }
+                      value={
+                        QuestionsAndAnswer[8].QuestionSet[index].answers[next]
+                          .value
+                      }
+                    />
+                  );
+                })}
+              </Card>
+              <Card id="thequiz__Card">
+                <Question
+                  key={508}
+                  name="thequiz__Question"
+                  question={QuestionsAndAnswer[9].QuestionSet[index].question}
+                />
+                {ansIndex2.map((next, key) => {
+                  return (
+                    <Answers
+                      key={key}
+                      name="thequiz_Answer"
+                      attribute={QuestionsAndAnswer[9].ability}
+                      answer={
+                        QuestionsAndAnswer[9].QuestionSet[index].answers[next]
+                          .answer
+                      }
+                      value={
+                        QuestionsAndAnswer[9].QuestionSet[index].answers[next]
+                          .value
+                      }
+                    />
+                  );
+                })}
+              </Card>
             </div>
           );
         })}

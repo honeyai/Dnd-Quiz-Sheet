@@ -1,20 +1,20 @@
 .wrapper {
-  border: solid red;
+  /* border: solid red; */
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(1fr);
+  grid-template-columns: repeat(auto-fit, minmax( 1fr));
+  justify-content: center;
 }
 
 .empty1 {
-  border: solid blue;
-
-  width: 20vw;
+  /* border: solid blue; */
+  /* width: 20vw; */
   grid-column: 1;
 }
 
 .empty2 {
-  border: solid green;
-  width: 20vw;
+  /* border: solid green; */
+  /* width: 20vw; */
   grid-column: 3;
 }
