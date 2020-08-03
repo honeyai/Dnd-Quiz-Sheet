@@ -1,0 +1,12 @@
+button {
+  outline: none;
+  background-color: rgb(235, 227, 219);
+  cursor: pointer;
+  border: none;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+button:active {
+  background-color: rgb(219, 211, 203);
+}

@@ -4,3 +4,21 @@
   margin: 1rem;
   /* border: black solid; */
 }
+
+#thequiz__Button {
+  background-color: azure;
+}
+
+.thequiz__Question {
+  padding: 1rem;
+  padding-top: 0rem;
+  text-align: center;
+  font-size: larger;
+}
+
+.thequiz__AContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}

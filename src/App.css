@@ -9,12 +9,12 @@
 
 .empty1 {
   /* border: solid blue; */
-  /* width: 20vw; */
+  width: 20vw;
   grid-column: 1;
 }
 
 .empty2 {
   /* border: solid green; */
-  /* width: 20vw; */
+  width: 18vw;
   grid-column: 3;
 }
