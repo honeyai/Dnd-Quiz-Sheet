@@ -19,6 +19,8 @@ const TheQuiz = () => {
   // console.log("this index!", index);
 
   const passResults = score => {
+    console.log("these are the scores,", score)
+
     Object.values(score).forEach(value => {
       console.log("these are the values,", value)
       //compare with the last to see which is the highest and if they're all even assign half elf or human
