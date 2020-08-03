@@ -54,8 +54,11 @@ const TheQuiz = () => {
       let filtered = getAttribute(score, max); //trying to get the answer out of this filter array
       let result = filtered[0];
       console.log("this is result,", result);
-      Object.entries(score).forEach(pairs => {
-        
+      Object.entries(raceBank).forEach(pairs => {
+        console.log("these are the pairs,", pairs)
+        if (pairs[0] === result) {
+          console.log("this might work,")
+        }
       })
     }
   }
