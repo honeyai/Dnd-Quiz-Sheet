@@ -62,12 +62,12 @@ const TheQuiz = () => {
                 );
               })
             ) : index === 2 ? (
-              ansIndex1.map(ans => {
+              ansIndex1.map((ans, key) => {
                 return (
                   <Answers
                     value={QuestionsAndAnswer[2].Response[ans].value}
                     attribute={QuestionsAndAnswer[2].Response[ans].ability}
-                    key={key+40}
+                    key={key}
                     name="thequiz__Answer"
                     answer={QuestionsAndAnswer[2].Response[ans].answer}
                   />
@@ -78,40 +78,40 @@ const TheQuiz = () => {
                 <Answers
                   value={QuestionsAndAnswer[3].Response[0].value}
                   attribute={QuestionsAndAnswer[3].Response[0].ability}
-                  key={key+50}
+                  key={1}
                   name="thequiz__Answer"
                   answer={QuestionsAndAnswer[3].Response[0].answer}
                 />
                 <Answers
                   value={QuestionsAndAnswer[3].Response[1].value}
                   attribute={QuestionsAndAnswer[3].Response[1].ability}
-                  key={key+60}
+                  key={2}
                   name="thequiz__Answer"
                   answer={QuestionsAndAnswer[3].Response[1].answer}
                 />
                 <Answers
                   value={QuestionsAndAnswer[3].Response[2].value}
                   attribute={QuestionsAndAnswer[3].Response[2].ability}
-                  key={key+70}
+                  key={3}
                   name="thequiz__Answer"
                   answer={QuestionsAndAnswer[3].Response[2].answer}
                 />
                 <Answers
                   value={QuestionsAndAnswer[3].Response[3].value}
                   attribute={QuestionsAndAnswer[3].Response[3].ability}
-                  key={key+80}
+                  key={4}
                   name="thequiz__Answer"
                   answer={QuestionsAndAnswer[3].Response[3].answer}
                 />
               </div>
             ) : index === 4 ? (
-              ansIndex1.map((ans) => {
+              ansIndex1.map((ans, key) => {
                 return (
                   <div>
                     <Answers
                       value={QuestionsAndAnswer[4].Response[ans].value}
+                      key={key}
                       attribute={QuestionsAndAnswer[4].Response[ans].ability}
-                      key={key+90}
                       name="thequiz__Answer"
                       answer={QuestionsAndAnswer[4].Response[ans].answer}
                     />
