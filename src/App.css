@@ -1,5 +1,20 @@
 .wrapper {
   border: solid red;
-  width: ;
-  height:;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+}
+
+.empty1 {
+  border: solid blue;
+
+  width: 20vw;
+  grid-column: 1;
+}
+
+.empty2 {
+  border: solid green;
+  width: 20vw;
+  grid-column: 3;
 }
