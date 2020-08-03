@@ -43,28 +43,31 @@ const TheQuiz = () => {
     
     const getAttribute = (object, value) => Object.keys(object).filter(key => object[key] === value);
 
-    console.log(min, max); //if these have less than two of difference from each other max-min <= 2 take the max and find the attribute
+    // console.log(min, max); //if these have less than two of difference from each other max-min <= 2 take the max and find the attribute
 
     if(max - min <= 2) {
-      console.log("they're going to get human or half elf")
+      // console.log("they're going to get human or half elf")
       let tie = ["half-elf", "human"];
       endPath = tie[tieBreaker(tie)];
     } else {
       console.log(getAttribute(score, max))
       let filtered = getAttribute(score, max); //trying to get the answer out of this filter array
       let result = filtered[0];
-      console.log("this is result,", result);
+      // console.log("this is result,", result);
       Object.entries(raceBank).forEach(pairs => {
-        console.log("these are the pairs,", pairs)
+        // console.log("these are the types,", typeof pairs[1])
         if (pairs[0] === result) {
-          console.log("this might work,", pairs[1][0]);
-          endPath= pairs[1][0];
+          if (typeof pairs[1] === "string"){
+            // console.log("this might work,", pairs[1]);
+            endPath= pairs[1];
+          } else {
+            // console.log("this might work,", pairs[1][0]);
+            endPath= pairs[1][0];
+          }
         }
       })
     }
   }
-
-
 
   return (
     <form>
@@ -285,4 +288,5 @@ const TheQuiz = () => {
   );
 };
 
+export { endPath };
 export default TheQuiz;
