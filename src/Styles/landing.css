@@ -1,0 +1,16 @@
+.landing__Background {
+  background-image: url("../Assests/DnDFanSiteKit/Art/Illo1.jpg") no repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10rem;
+}
+
+#landing__StartButton {
+  margin-right: 10rem;
+}

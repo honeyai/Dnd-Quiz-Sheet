@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import TheQuiz from './Components/TheQuiz';
+import Landing from './Components/Landing';
+import NavBar from './Components/NavBar';
 
 function App() {
   return (
     <div className="wrapper">
-      <div className="empty1"></div>
-      <TheQuiz />
-      <div className="empty2"></div>
+      <NavBar />
     </div>
   );
 }

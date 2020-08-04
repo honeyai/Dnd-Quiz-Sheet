@@ -1,0 +1,22 @@
+.toolbar__Navbar {
+  align-content: center;
+}
+
+.navbar__Link {
+  color: white;
+}
+
+.navbar__Container li {
+
+  list-style: none;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.navbar__Container li:hover {
+  border-bottom: thin;
+}
+
+.navbar__links {
+  display: flex;
+}
