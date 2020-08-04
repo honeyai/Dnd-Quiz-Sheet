@@ -22,8 +22,8 @@ const Results = ({
   // const [data, setData] = useState(null);
 
   const secondRetrieval = (end) => {
-    return axios.get(BASE_URL + end)
-  }
+    return axios.get(BASE_URL + end);
+  };
 
   // async function secondRetrieval(end) {
   //   try {
@@ -97,30 +97,24 @@ const Results = ({
                   : traits.map((element, key) => {
                       // let response = secondRetrieval(element.url);
 
-                      let data
+                      let data;
 
-                      axios.get(BASE_URL + element.url).then((response) => {
-                        return data = response.data.desc[0];
-                        console.log("here i am,", response) 
-                        console.log("data,", data)
-                      }).catch((error) => console.log("oopies,", error.message))
-
-
-                      // let data = response.data.desc[0];
-
-                      if (data === null) {
-                        console.log("i wasn't ready");
-                      } else {
-                        console.log("i am ready");
-                        return (
-                          <div>
-                            <Typography key={key} component="h6">
-                              {element.name}
-                            </Typography>
-                            <Typography component="p">{data}</Typography>
-                          </div>
+                      axios
+                        .get(BASE_URL + element.url)
+                        .then((response) => {
+                          data = response.data.desc[0];
+                        })
+                        .catch((error) =>
+                          console.log("oopies,", error.message)
                         );
-                      }
+                      return (
+                        <div>
+                          <Typography key={key} component="h6">
+                            {element.name}
+                          </Typography>
+                          <Typography component="p">{data}</Typography>
+                        </div>
+                      );
                     })}
               </div>
             </div>
