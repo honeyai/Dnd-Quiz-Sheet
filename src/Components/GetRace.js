@@ -37,6 +37,7 @@ const GetRace = () => {
           language_desc={data.language_desc}
           speed={data.speed}
           languages={data.languages}
+          traits={data.traits}
         />
       </div> : <div>Nothing to see here</div>
   );

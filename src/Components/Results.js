@@ -14,7 +14,11 @@ const Results = ({
   language_desc,
   speed,
   languages,
+  traits,
 }) => {
+
+  
+
   return (
     <div>
       <Container>
@@ -44,20 +48,19 @@ const Results = ({
                 title="Language Proficiencies"
                 subheader={`Languages you know as a ${race}`}
               />
-              <ul>
+              <div>
                 {languages.map((element, key) => {
                   console.log("this element,", element.name);
                   return <li key={key}>{element.name}</li>;
                 })}
-              </ul>
+              </div>
             </div>
             <div className="results__Traits">
               <CardHeader
                 title="Race Traits"
                 subheader={
                   <p>
-                    These traits are common among members of your race,
-                    as
+                    These traits are common among members of your race, as
                     {index[0] === "a" ||
                     index[0] === "e" ||
                     index[0] === "i" ||
@@ -67,10 +70,18 @@ const Results = ({
                     ) : (
                       <span> a </span>
                     )}
-                    {race}.
+                    {race}
                   </p>
                 }
               />
+              <div>
+                {traits.length === 0
+                  ? null
+                  : traits.map((element, key) => {
+                      console.log("this element,", element.name);
+                      return <Typography key={key}>{element.name}</Typography>;
+                    })}
+              </div>
             </div>
           </CardContent>
         </Card>
