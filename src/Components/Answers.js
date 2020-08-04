@@ -14,7 +14,7 @@ finalScoreSet = {
 const Answers = ({ answer, value, attribute }) => {
   
   const handleClick = (event) => {
-    console.log("this is hopefully attribute,", event.target.dataset.attribute);
+    // console.log("this is hopefully attribute,", event.target.dataset.attribute);
     event.preventDefault();
     switch (event.target.dataset.attribute) {
       case "strength":
@@ -45,7 +45,7 @@ const Answers = ({ answer, value, attribute }) => {
   return (
     <div>
       <button
-        onClick={(event) => {handleClick(event); console.log("finalScoreSet:", finalScoreSet)}}
+        onClick={(event) => handleClick(event)}
         value={value}
         data-attribute={attribute}
       >

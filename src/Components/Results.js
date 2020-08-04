@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Container,
   Card,
@@ -6,6 +6,9 @@ import {
   CardContent,
   Typography,
 } from "@material-ui/core";
+import axios from "axios";
+
+const BASE_URL = "https://www.dnd5eapi.co";
 
 const Results = ({
   race,
@@ -16,8 +19,23 @@ const Results = ({
   languages,
   traits,
 }) => {
+  const [data, setData] = useState(null);
 
-  
+  // const secondRetrieval = (end) => {
+  //   return axios.get(BASE_URL + end)
+  // }
+
+  async function secondRetrieval(end) {
+    try {
+      let response = await axios.get(BASE_URL + end);
+      console.log("this is response data,", response.data.desc[0]);
+      setData(response.data.desc[0]);
+    } catch (error) {
+      console.error("ERm... ya done goofed..", error.message);
+    }
+  }
+
+  console.log("this is data,", data);
 
   return (
     <div>
@@ -78,8 +96,16 @@ const Results = ({
                 {traits.length === 0
                   ? null
                   : traits.map((element, key) => {
-                      console.log("this element,", element.name);
-                      return <Typography key={key}>{element.name}</Typography>;
+                      secondRetrieval(element.url);
+
+                      return (
+                        <div>
+                          <Typography key={key} component="h6">
+                            {element.name}
+                          </Typography>
+                          ;<Typography component="body2">{data}</Typography>;
+                        </div>
+                      );
                     })}
               </div>
             </div>
