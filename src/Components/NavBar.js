@@ -6,8 +6,8 @@ import {
   Link,
   Switch,
   Route,
-  withRouter,
-} from "react-router-dom";
+} 
+from "react-router-dom";
 import Landing from "./Landing";
 import TheQuiz from "./TheQuiz";
 
@@ -20,14 +20,14 @@ const NavBar = () => {
             <ul className="navbar__links">
               <li>
                 <Typography variant="h6" id="navbar__link">
-                  <Link to = "/">
+                  <Link to = "/" style={{ textDecoration: 'none', color: 'white' }}>
                     Home
                   </Link>
                 </Typography>
               </li>
               <li>
                 <Typography variant="h6" id="navbar__link">
-                  <Link to = "/Quiz">
+                  <Link to = "/Quiz"   style={{ textDecoration: 'none', color: 'white' }}>
                     Quiz
                   </Link>
                 </Typography>

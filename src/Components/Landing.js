@@ -9,7 +9,7 @@ const Landing = () => {
       <Typography variant="h1" component="h2" gutterBottom>
         Who will you be in the world of Dungeons & Dragons
       </Typography>
-      <Link to="/Quiz">
+      <Link to="/Quiz" className="navbar__Route">
         <Button id="landing__StartButton">
           <Typography variant="button" display="block" gutterBottom>
             Take the Quiz
