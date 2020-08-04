@@ -9,7 +9,6 @@ import {
 import axios from "axios";
 
 const BASE_URL = "https://www.dnd5eapi.co";
-const data = null;
 
 const Results = ({
   race,
@@ -22,23 +21,20 @@ const Results = ({
 }) => {
   // const [data, setData] = useState(null);
 
-  // const secondRetrieval = (end) => {
-  //   return axios.get(BASE_URL + end)
-  // }
+  const secondRetrieval = (end) => {
+    return axios.get(BASE_URL + end)
+  }
 
   // async function secondRetrieval(end) {
   //   try {
   //     let response = await axios.get(BASE_URL + end);
-  //     console.log("this is response data,", response.data.desc[0]);
+  //     // console.log("this is response data,", response.data.desc[0]);
   //     data = response.data.desc[0];
+  //     console.log("this is data,", data);
   //   } catch (error) {
   //     console.error("ERm... ya done goofed..", error.message);
   //   }
   // }
-
-  const secondRetrieval = (end) => {return axios.get(BASE_URL + end)} 
-
-  // console.log("this is data,", data);
 
   return (
     <div>
@@ -99,18 +95,32 @@ const Results = ({
                 {traits.length === 0
                   ? null
                   : traits.map((element, key) => {
-                      let response = secondRetrieval(element.url);
-                      
-                      let data = response.data.desc[0];
+                      // let response = secondRetrieval(element.url);
 
-                      return (
-                        <div>
-                          <Typography key={key} component="h6">
-                            {element.name}
-                          </Typography>
-                          <Typography component="body2">bleh</Typography>
-                        </div>
-                      );
+                      let data
+
+                      axios.get(BASE_URL + element.url).then((response) => {
+                        return data = response.data.desc[0];
+                        console.log("here i am,", response) 
+                        console.log("data,", data)
+                      }).catch((error) => console.log("oopies,", error.message))
+
+
+                      // let data = response.data.desc[0];
+
+                      if (data === null) {
+                        console.log("i wasn't ready");
+                      } else {
+                        console.log("i am ready");
+                        return (
+                          <div>
+                            <Typography key={key} component="h6">
+                              {element.name}
+                            </Typography>
+                            <Typography component="p">{data}</Typography>
+                          </div>
+                        );
+                      }
                     })}
               </div>
             </div>
