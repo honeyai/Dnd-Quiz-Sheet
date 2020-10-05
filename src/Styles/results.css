@@ -1,9 +1,9 @@
 .results__container {
-  grid-column: 2/3;
-  grid-row: 1;
-  position: relative;
+  padding: 3rem;
+
+  /* position: absolute; */
 }
 
 .results__content {
-  position: relative;
+  /* position: absolute; */
 }
