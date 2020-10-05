@@ -15,7 +15,8 @@
 }
 
 .thequiz__wrapper {
-  display: grid;
+  display: flex;
+  justify-content: center;
 }
 
 .thequiz__SuperContainer {
@@ -23,8 +24,8 @@
   justify-content: center;
   grid-column: 1;
   padding: 3rem;
-  /* min-width: 100vw; */
-  /* max-width: 80vw; */
+  min-width: 50vw;
+  max-width: 80vw;
 }
 
 .thequiz__Question {
