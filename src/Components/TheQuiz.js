@@ -74,8 +74,7 @@ const TheQuiz = () => {
   };
 
   return (
-    <div className="wrapper">
-      <div className="empty1"></div> 
+    <div className="thequiz__wrapper">
       <div className="thequiz__SuperContainer">
         {index.map((index, key) => {
           if (index < 5) {
@@ -346,7 +345,6 @@ const TheQuiz = () => {
         </Button>
       </div>
       {show ? <GetRace /> : null}
-      <div className="empty2"></div>
     </div>
   );
 };

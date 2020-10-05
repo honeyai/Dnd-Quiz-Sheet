@@ -6,15 +6,3 @@
   grid-template-columns: repeat(auto-fit, minmax( 1fr));
   justify-content: center;
 }
-
-.empty1 {
-  /* border: solid blue; */
-  width: 20vw;
-  grid-column: 1;
-}
-
-.empty2 {
-  /* border: solid green; */
-  width: 18vw;
-  grid-column: 3;
-}

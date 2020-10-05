@@ -48,6 +48,7 @@ const Answers = ({ answer, value, attribute }) => {
         onClick={(event) => handleClick(event)}
         value={value}
         data-attribute={attribute}
+        className="answers__button"
       >
         {answer}
       </button>

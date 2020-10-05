@@ -7,6 +7,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import axios from "axios";
+import '../Styles/results.css'
 
 const BASE_URL = "https://www.dnd5eapi.co";
 
@@ -38,8 +39,8 @@ const Results = ({
 
   return (
     <div>
-      <Container>
-        <Card>
+      <Container className="results__container">
+        <Card className="results__content">
           <CardHeader title={race} subheader={description} />
           <CardContent className="results__AboutRace">
             <Typography component="span">
