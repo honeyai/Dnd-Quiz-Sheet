@@ -3,7 +3,6 @@
   padding: 2rem;
   margin: 1rem;
   /* border: black solid; */
-  height: 30vh;
 }
 
 #thequiz__Button {
@@ -16,7 +15,7 @@
 }
 
 .thequiz__wrapper {
-  /* display: grid; */
+  display: grid;
 }
 
 .thequiz__SuperContainer {
@@ -38,6 +37,6 @@
 .thequiz__AContainer {
   display: grid;
   grid-template-columns: repeat(auto-fill, 50%);
-  grid-auto-flow: row dense;
-  border: solid;
+  grid-auto-flow: row ;
+  /* border: solid; */
 }
