@@ -1,9 +1,5 @@
 .results__container {
   padding: 3rem;
-
-  /* position: absolute; */
+  width: 50%;
 }
 
-.results__content {
-  /* position: absolute; */
-}

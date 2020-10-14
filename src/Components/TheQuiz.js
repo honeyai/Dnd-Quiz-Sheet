@@ -344,7 +344,7 @@ const TheQuiz = () => {
           Submit
         </Button>
       </div>
-      {show ? <GetRace /> : null}
+      {show ? <div className="thequiz__resultContainer"><GetRace /></div> : null}
     </div>
   );
 };
